@@ -1,101 +1,97 @@
-import Image from "next/image";
+"use client";
+import * as React from "react";
+import { BrandLogo } from "./BrandLogo";
+import Roll from "./Roll";
+import { Gallery } from "./Sponsors";
+import { TshirtOrder } from "./Merch";
+import { Footer } from "./footer";
+import { Hero } from "./hero";
+import Events, { Schedule } from "./Events";
 
-export default function Home() {
+const topBrands = [
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/e1731f699472c5ddd460c27b3c2bd9f5975212714665004e37c7a5e5358a2857?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 1",
+    className:
+      "object-contain shrink-0 self-stretch my-auto aspect-[0.94] w-[101px]",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/ce21eac9d0cfce5831c3f16b3770ead50a359e47490bcbbad5978b709b587fa7?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 2",
+    className: "object-contain max-w-full aspect-[0.95] w-[135px]",
+    withDivider: true,
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/e59aa3d917b4020110db81d26974c8992da20a4038e9443bb1116c63479095b9?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 3",
+    className:
+      "object-contain shrink-0 self-stretch my-auto aspect-[0.95] w-[102px]",
+  },
+];
+
+const bottomBrands = [
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/e0e77a2883e3361c59f122bdbd7b4f779a5c8ef8160a63f198ae6890ca3c8d18?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 4",
+    className:
+      "object-contain shrink-0 self-stretch my-auto aspect-[6.06] w-[97px]",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/704c279e60fd57d445d81e0559cad86ede82d59209c14d531b02c7ce22d9fa22?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 5",
+    className:
+      "object-contain shrink-0 self-stretch my-auto aspect-[0.55] w-[191px]",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/a2ae21999bfc65c47059d729a4a9115bb65e793b9dceaa02a28868a0db2de48e?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 6",
+    className: "object-contain self-stretch my-auto aspect-[0.55] w-[226px]",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/104d674a10db7f108fc9d5be729419b5ae04b703e745f96e21c759da6f410c11?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 7",
+    className:
+      "object-contain shrink-0 self-stretch my-auto aspect-[0.55] w-[191px]",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/48751c3ef324aa179e850b02463acb76b10abe089ef7ea304a490ff94bbaafca?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 8",
+    className: "object-contain shrink-0 self-start mt-52 w-3 max-md:mt-10",
+  },
+  {
+    src: "https://cdn.builder.io/api/v1/image/assets/TEMP/78673d1a55215678d43ba0d3a1a513854ff4245b68285196f06d71aaf88de13d?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
+    alt: "Brand logo 9",
+    className:
+      "object-contain shrink-0 self-stretch my-auto w-24 aspect-[5.99]",
+  },
+];
+
+export default function BrandShowcase() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <Hero />
+      <Roll />
+      <div className="flex flex-col justify-center items-center px-20 py-32 max-md:px-5 max-md:py-24">
+        <div className="flex flex-col items-center w-full max-w-[1235px] max-md:max-w-full">
+          <div className="flex shrink-0 max-w-full h-[61px] w-[264px]" />
+          <div className="flex flex-col justify-center p-1 mt-7 max-w-full w-[466px]">
+            <div className="flex gap-10 justify-center items-center w-full max-md:max-w-full">
+              {topBrands.map((brand, index) => (
+                <BrandLogo key={index} {...brand} />
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-5 justify-between items-center self-stretch mt-8 w-full max-md:max-w-full">
+            {bottomBrands.map((brand, index) => (
+              <BrandLogo key={index} {...brand} />
+            ))}
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <Events />
+        <Gallery />
+        <TshirtOrder />
+        <Footer />
+      </div>
+    </>
   );
 }
