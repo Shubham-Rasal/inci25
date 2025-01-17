@@ -25,11 +25,17 @@ module.exports = {
           "0%": { height: "400px", width: "600px" },
           "100%": { height: "50px", width: "100px" },
         },
+        verticalMarquee: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-50%)' },
+        },
       },
       animation: {
         scrollOpen: "scrollOpen 5s ease-in-out",
         scrollClose: "scrollClose 5s ease-in-out",
         "spin-slow": "spin 3s linear infinite",
+        "vertical-marquee": "verticalMarquee 20s linear infinite",
+        "vertical-marquee-reverse": "verticalMarquee 20s linear infinite reverse",
       },
     },
   },

@@ -26,7 +26,7 @@ export const TshirtOrder= () => {
             className="object-contain shrink-0 aspect-[0.98] w-[58px]"
           />
         </div>
-        <div className="flex flex-wrap gap-10 mt-6 max-md:max-w-full">
+        <div className="flex flex-wrap px-16 items-center justify-center mx-auto mt-6 max-md:max-w-full">
           <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
             <div className="self-end w-full max-w-[1072px] max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col">

@@ -18,7 +18,7 @@ const Roll = () => {
       onClick={toggleScroll}
     >
       <div
-        className={`relative flex flex-row items-center overflow-hidden h-[600px]  transition-all duration-[2000ms] ${
+        className={`relative flex flex-row items-center overflow-hidden h-[600px]  transition-all duration-[1000ms] ${
           isOpen ? "w-[1200px]" : "w-[200px]"
         }`}
       >
@@ -29,7 +29,7 @@ const Roll = () => {
 
         {/* Scroll Body */}
         <div
-          className={`flex-1 bg-scroll-body bg-repeat-x bg-cover transition-all h-full max-h-[600px] duration-[1000ms] ${
+          className={`flex-1 bg-scroll-body bg-repeat-x bg-cover items-center justify-center flex-col flex transition-all h-full max-h-[600px] duration-[500ms] ${
             isOpen ? "opacity-100" : "opacity-0"
           }`}
           style={{
@@ -38,9 +38,9 @@ const Roll = () => {
           }}
           onClick={handleClose}
         >
-          <div className="p-5 text-center text-[#5d4b2f] font-serif">
-            <h1 className="mb-4 text-2xl font-bold">About Us</h1>
-            <p>
+          <div className="p-5 text-center text-[#5d4b2f]  justify-center font-serif items-center flex flex-col">
+            <h1 className="mb-4 text-7xl font-bold uppercase">About Us</h1>
+            <p className="text-xl text-center w-1/2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text...
             </p>

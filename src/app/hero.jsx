@@ -1,6 +1,5 @@
 import * as React from "react";
-
-
+import Image from "next/image";
 export const SocialIcons = ({ icons }) => {
   return (
     <div className="flex flex-col items-end my-auto max-w-full w-[179px]">
@@ -44,32 +43,49 @@ export const Hero = () => {
   return (
     <div className="flex overflow-hidden flex-col bg-stone-950">
       <div className="flex relative flex-col pt-11 w-full min-h-[840px] max-md:max-w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5eb8779290a064fc99dd7031ff43e5ac460865eac7dff95308c92265e44064d?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
-          alt="Background image"
-          className="object-cover absolute inset-0 size-full"
-        />
-        <div className="flex relative flex-col pl-14 w-full max-md:pl-5 max-md:max-w-full">
+        <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-stone-950 to-transparent">
+          <div className="grid grid-cols-10 gap-10">
+            {[...Array(30)].map((_, i) => (
+              <div key={i} className="relative flex flex-col h-full">
+                <div className={`${i % 2 === 0 ? 'animate-vertical-marquee' : 'animate-vertical-marquee-reverse'} flex flex-col`}>
+                  {[...Array(20)].map((_, j) => (
+                    <div key={j} className="flex justify-center items-center py-2">
+                      <Image
+                        src="/letter.svg"
+                        width={60}
+                        height={60}
+                        alt="Letter"
+                        className="object-contain aspect-square"
+                      />
+                    </div>
+                  ))}
+                </div>
+               
+              </div>
+            ))}
+          </div>
+        </div>
+                <div className="flex relative flex-col pl-14 w-full max-md:pl-5 max-md:max-w-full">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/99f38121195e6973b08059816db7eb8f4bda5a2d0ae9e175443120b006c12e1f?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
             alt="Logo"
             className="object-contain aspect-square w-[60px]"
           />
-          <div className="flex flex-wrap gap-5 justify-between self-end mt-20 max-w-full w-[851px] max-md:mt-10">
-            <div className="flex flex-col text-7xl text-orange-200 whitespace-nowrap max-md:text-4xl">
+          <div className="flex flex-wrap justify-between self-center  max-w-full w-[400px] max-md:mt-10">
+            <div className="relative">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/c972068bd4d3c21279abc8e714d9ff56e24378ccee59e68deb09817cb44c0d2e?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
+                src="/logo.png"
                 alt="Incident artwork"
-                className="object-contain w-full aspect-square shadow-[0px_0px_71px_rgba(243,146,49,1)]"
+                className="object-contain w-full aspect-square rounded-full"
               />
-              <div className="mt-16 max-md:mt-10 max-md:mr-1.5 max-md:text-4xl">
-                Incident
-              </div>
+              <div className="absolute inset-0 size-[400px] rounded-full blur-sm animate-pulse shadow-[0px_0px_71px_rgba(243,146,49,1)]" />
             </div>
-            <SocialIcons icons={socialIcons} />
+            <div className="self-center text-center text-xl w-full mt-16 max-md:mt-10 max-md:mr-1.5 max-md:text-4xl">
+              Incident
+            </div>
+            {/* <SocialIcons icons={socialIcons} /> */}
           </div>
           <div className="self-center mt-6 text-3xl text-yellow-800 uppercase max-md:max-w-full">
             UDBHAV - the rhythm of timeless essence
