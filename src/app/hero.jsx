@@ -41,14 +41,14 @@ export const Hero = () => {
   ];
 
   return (
-    <div className="flex overflow-hidden flex-col bg-stone-950">
-      <div className="flex relative flex-col pt-11 w-full min-h-[840px] max-md:max-w-full">
+    <div className="flex overflow-hidden flex-col">
+      <div className="flex relative items=center flex-col pt-11 w-full min-h-[840px] max-md:max-w-full">
         <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-stone-950 to-transparent">
           <div className="grid grid-cols-10 gap-10">
-            {[...Array(30)].map((_, i) => (
+            {[...Array(12)].map((_, i) => (
               <div key={i} className="relative flex flex-col h-full">
                 <div className={`${i % 2 === 0 ? 'animate-vertical-marquee' : 'animate-vertical-marquee-reverse'} flex flex-col`}>
-                  {[...Array(20)].map((_, j) => (
+                  {[...Array(40)].map((_, j) => (
                     <div key={j} className="flex justify-center items-center py-2">
                       <Image
                         src="/letter.svg"
@@ -66,12 +66,12 @@ export const Hero = () => {
           </div>
         </div>
                 <div className="flex relative flex-col pl-14 w-full max-md:pl-5 max-md:max-w-full">
-          <img
+          {/* <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/99f38121195e6973b08059816db7eb8f4bda5a2d0ae9e175443120b006c12e1f?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
             alt="Logo"
             className="object-contain aspect-square w-[60px]"
-          />
+          /> */}
           <div className="flex flex-wrap justify-between self-center  max-w-full w-[400px] max-md:mt-10">
             <div className="relative">
               <img
@@ -87,7 +87,7 @@ export const Hero = () => {
             </div>
             {/* <SocialIcons icons={socialIcons} /> */}
           </div>
-          <div className="self-center mt-6 text-3xl text-yellow-800 uppercase max-md:max-w-full">
+          <div className="self-center text-center mt-6 text-3xl text-yellow-800 uppercase max-md:max-w-full">
             UDBHAV - the rhythm of timeless essence
           </div>
         </div>

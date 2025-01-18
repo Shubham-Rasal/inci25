@@ -35,16 +35,16 @@ const galleryImages = [
 
 export const Gallery = () => {
   return (
-    <div className="flex flex-col items-end px-20 max-md:pl-5">
-      <div className="flex overflow-hidden flex-col justify-center items-center py-20 w-full bg-stone-950 max-md:max-w-full">
+    <div className="flex flex-col items-center mx-auto max-md:pl-5">
+      <div className="flex overflow-hidden flex-col justify-center items-center py-20 w-full  max-md:max-w-full">
         <div className="flex flex-col w-full max-w-[1676px] max-md:max-w-full">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/097abe75c6b88520e087c1e89d951ad324405e5a0653d4da080ecf1ad71da830?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
             alt="Main header image"
-            className="object-contain self-center max-w-full aspect-[4.31] w-[263px]"
+            className="object-contain self-center max-w-full aspect-[4.31] w-[270px]"
           />
-          <div className="flex flex-wrap gap-10 justify-center items-center mt-24 w-full max-md:mt-10 max-md:max-w-full">
+          <div className="grid grid-cols-3 mt-24 gap-10 mx-auto w-full max-md:grid-cols-1">
             {galleryImages.map((image, index) => (
               <GalleryItem key={index} image={image} />
             ))}
@@ -57,7 +57,7 @@ export const Gallery = () => {
 
 export const GalleryItem = ({ image }) => {
   return (
-    <div className="flex flex-col self-stretch my-auto w-[201px]">
+    <div className="flex flex-col self-center justify-center items-center my-auto w-[201px]">
       <img
         loading="lazy"
         src={image.src}
