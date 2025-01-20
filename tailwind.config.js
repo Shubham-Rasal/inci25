@@ -26,8 +26,8 @@ module.exports = {
           "100%": { height: "50px", width: "100px" },
         },
         verticalMarquee: {
-          '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(-50%)' },
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-50%)" },
         },
         scroll: {
           to: {
@@ -45,5 +45,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar-hide"), 
+  ],
 };
