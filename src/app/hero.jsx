@@ -43,7 +43,7 @@ export const Hero = () => {
   return (
     <div className="flex overflow-hidden flex-col">
       <div className="flex relative items-center flex-col pt-11 w-full min-h-[840px]  max-md:max-w-full">
-        <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-stone-950 to-transparent">
+        <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-amber-950 to-transparent blur-xs">
           <div className="grid grid-cols-12 gap-1 -z-10">
             {[...Array(12)].map((_, i) => (
               <div key={i} className="relative flex flex-col h-full">
@@ -60,7 +60,6 @@ export const Hero = () => {
                     </div>
                   ))}
                 </div>
-               
               </div>
             ))}
           </div>
@@ -91,8 +90,8 @@ export const Hero = () => {
             UDBHAV - the rhythm of timeless essence
           </div>
         </div>
-        {/* <div className="flex relative mt-8 w-full min-h-[141px] max-md:max-w-full" /> */}
       </div>
+      <div className="h-20 bg-gradient-to-b from-transparent blur" />
     </div>
   );
 };

@@ -19,7 +19,7 @@ const Roll = () => {
     >
       <div
         className={`relative flex flex-row items-center overflow-hidden h-[300px] lg:h-[600px]  transition-all duration-[1000ms] ${
-          isOpen ? "w-[1200px]" : "w-[220px]"
+          isOpen ? "w-[1200px]" : "w-[120px]"
         }`}
       >
         {/* Left Roll */}

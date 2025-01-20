@@ -29,7 +29,7 @@ export default function Shows() {
   }
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-[#2b1810]">
+    <div className="relative min-h-screen flex items-center justify-center ">
       <div className="relative w-full max-w-5xl px-20">
         {/* Navigation Buttons */}
         <button
