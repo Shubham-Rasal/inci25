@@ -8,6 +8,7 @@ import { Footer } from "./footer";
 import { Hero } from "./hero";
 import Events, { Schedule } from "./Events";
 import Icare from "./Icare";
+import Shows from "./Shows";
 
 const topBrands = [
   {
@@ -73,6 +74,8 @@ export default function BrandShowcase() {
       <div className="">
       <Hero />  
       <Roll />
+      
+      <Shows/>
         <Events />
         <Gallery />
         <Icare/>
