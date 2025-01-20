@@ -55,7 +55,7 @@ const socialIcons = [
 
 export const Footer = () => {
   return (
-    <div className="flex overflow-hidden flex-wrap gap-10 items-start pt-20 pr-20 pl-7 max-md:px-5">
+    <div className="flex overflow-hidden flex-wrap gap-10 items-start pt-20 pr-20 pl-7 max-md:px-5 bg-gradient-to-t from-background to-background-gradient">
       <div className="grow self-end mt-44 text-[180px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         incident
       </div>

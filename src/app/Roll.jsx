@@ -44,7 +44,7 @@ const Roll = () => {
             transition={{ duration: 4.5, ease: "easeInOut" }}
             className="lg:ml-16 p-5 lg:p-32 text-center text-[#5d4b2f] justify-center font-serif items-center flex flex-col"
           >
-            <h1 className="mb-4 lg:text-7xl font-bold uppercase">About Us</h1>
+         
             <p className="lg:text-xl text-center  -rotate-90 lg:rotate-0">
               We are a group of students from NITK who are passionate about
               creating innovative solutions to real-world problems. Our mission

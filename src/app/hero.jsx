@@ -44,18 +44,18 @@ export const Hero = () => {
     <div className="flex overflow-hidden flex-col">
       <div className="flex relative items-center flex-col pt-11 w-full min-h-[840px]  max-md:max-w-full">
         <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-stone-950 to-transparent">
-          <div className="grid grid-cols-10 gap-10">
+          <div className="grid grid-cols-12 gap-1 -z-10">
             {[...Array(12)].map((_, i) => (
               <div key={i} className="relative flex flex-col h-full">
                 <div className={`${i % 2 === 0 ? 'animate-vertical-marquee' : 'animate-vertical-marquee-reverse'} flex flex-col`}>
                   {[...Array(40)].map((_, j) => (
                     <div key={j} className="flex justify-center items-center py-2">
                       <Image
-                        src="/letter.svg"
+                        src={`/letter${Math.floor(Math.random() * 4) + 1}.svg`}
                         width={60}
                         height={60}
                         alt="Letter"
-                        className="object-contain aspect-square"
+                        className="object-contain aspect-square size-8"
                       />
                     </div>
                   ))}
