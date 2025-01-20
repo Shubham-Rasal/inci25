@@ -100,42 +100,16 @@ export default function Events() {
           {/* Buttons for navigation */}
           <div className="mt-4 flex justify-center gap-4">
             <button
-              className="flex items-center justify-center bg-[#c4a052] px-4 py-2 text-white rounded-md hover:bg-[#a37f3e] transition duration-150 ease-in-out"
+              className="flex items-center justify-center w-fit hover:opacity-50 px-4 py-2 text-white rounded-md transition duration-150 ease-in-out"
               onClick={scrollLeft}
             >
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
+              <img src="ra.svg" alt="Left Arrow" className="size-32" />
             </button>
             <button
-              className="flex items-center justify-center bg-[#c4a052] px-4 py-2 text-white rounded-md hover:bg-[#a37f3e] transition duration-150 ease-in-out"
+              className="flex items-center justify-center w-fit hover:opacity-50 px-4 py-2 text-white rounded-md transition duration-150 ease-in-out"
               onClick={scrollRight}
             >
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <img src="la.svg" alt="Right Arrow" className="size-32" />
             </button>
           </div>
         </div>

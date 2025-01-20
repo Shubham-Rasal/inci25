@@ -71,7 +71,7 @@ export const Hero = () => {
             alt="Logo"
             className="object-contain aspect-square w-[60px]"
           /> */}
-          <div className="flex flex-wrap justify-between self-center w-[200px] lg:w-[400px] max-md:mt-10">
+          <div className="flex flex-wrap justify-between self-center w-[300px] lg:w-[400px] max-md:mt-10">
             <div className="relative">
               <img
                 loading="lazy"

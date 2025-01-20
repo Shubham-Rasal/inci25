@@ -22,13 +22,13 @@ export function cn(...inputs) {
 
 export default function Icare() {
   return (
-    <div className="flex flex-col items-center justify-center mx-auto max-md:pl-5">
+    <div className="flex flex-col items-center justify-center ">
       <ResponsiveImage
         src="/icare.png"
         alt="Incident 25 Logo"
         className="object-contain self-center max-w-full aspect-[4.31] w-[263px]"
         />
-    <div className="flex px-4 flex-col items-center justify-center w-full overflow-hidden lg:flex-row">
+    <div className="flex px-4 flex-col items-center justify-center w-full lg:flex-row">
       <div className="lg:p-12 py-8 flex flex-col justify-center space-y-6  max-w-3xl lg:w-1/2">
       
         <h1 className="text-4xl font-bold text-white">
