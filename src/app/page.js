@@ -70,24 +70,9 @@ const bottomBrands = [
 export default function BrandShowcase() {
   return (
     <>
-      <Hero />
+      <div className="">
+      <Hero />  
       <Roll />
-      <div className="flex flex-col justify-center items-center px-20 py-32 max-md:px-5 max-md:py-24">
-        <div className="flex flex-col items-center w-full max-w-[1235px] max-md:max-w-full">
-          <div className="flex shrink-0 max-w-full h-[61px] w-[264px]" />
-          <div className="flex flex-col justify-center p-1 mt-7 max-w-full w-[466px]">
-            <div className="flex gap-10 justify-center items-center w-full max-md:max-w-full">
-              {topBrands.map((brand, index) => (
-                <BrandLogo key={index} {...brand} />
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-5 justify-between items-center self-stretch mt-8 w-full max-md:max-w-full">
-            {bottomBrands.map((brand, index) => (
-              <BrandLogo key={index} {...brand} />
-            ))}
-          </div>
-        </div>
         <Events />
         <Gallery />
         <Icare/>

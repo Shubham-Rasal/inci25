@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 const Roll = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleScroll = () => {
     setIsOpen(!isOpen);
@@ -14,12 +14,12 @@ const Roll = () => {
 
   return (
     <div
-      className="flex items-center justify-center h-screen cursor-pointer"
+      className="flex items-center justify-center lg:h-screen lg:w-screen overflow-hidden cursor-pointer rotate-90 lg:rotate-0"
       onClick={toggleScroll}
     >
       <div
-        className={`relative flex flex-row items-center overflow-hidden h-[600px]  transition-all duration-[1000ms] ${
-          isOpen ? "w-[1200px]" : "w-[120px]"
+        className={`relative flex flex-row items-center overflow-hidden h-[300px] lg:h-[600px]  transition-all duration-[1000ms] ${
+          isOpen ? "w-[1200px]" : "w-[220px]"
         }`}
       >
         {/* Left Roll */}
@@ -29,7 +29,7 @@ const Roll = () => {
 
         {/* Scroll Body */}
         <div
-          className={`flex-1 bg-scroll-body bg-repeat-x bg-cover items-center justify-center flex-col flex transition-all h-full max-h-[450px] duration-[500ms] ${
+          className={`flex-1 bg-scroll-body bg-repeat-x bg-cover text-center items-center justify-center flex-col flex transition-all h-full max-h-[450px] duration-[500ms] ${
             isOpen ? "opacity-100" : "opacity-100"
           }`}
           style={{
@@ -38,13 +38,19 @@ const Roll = () => {
           }}
           onClick={handleClose}
         >
-          <div className="p-5 text-center text-[#5d4b2f]  justify-center font-serif items-center flex flex-col">
-            <h1 className="mb-4 text-7xl font-bold uppercase">About Us</h1>
-            <p className="text-xl text-center w-1/2">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text...
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 4.5, ease: "easeInOut" }}
+            className="lg:ml-16 p-5 lg:p-32 text-center text-[#5d4b2f] justify-center font-serif items-center flex flex-col"
+          >
+            <h1 className="mb-4 lg:text-7xl font-bold uppercase">About Us</h1>
+            <p className="lg:text-xl text-center  -rotate-90 lg:rotate-0">
+              We are a group of students from NITK who are passionate about
+              creating innovative solutions to real-world problems. Our mission
+              is to make a positive impact on society through our work.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         {/* Right Roll */}

@@ -42,7 +42,7 @@ export const Hero = () => {
 
   return (
     <div className="flex overflow-hidden flex-col">
-      <div className="flex relative items=center flex-col pt-11 w-full min-h-[840px] max-md:max-w-full">
+      <div className="flex relative items-center flex-col pt-11 w-full min-h-[840px]  max-md:max-w-full">
         <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-stone-950 to-transparent">
           <div className="grid grid-cols-10 gap-10">
             {[...Array(12)].map((_, i) => (
@@ -65,14 +65,14 @@ export const Hero = () => {
             ))}
           </div>
         </div>
-                <div className="flex relative flex-col pl-14 w-full max-md:pl-5 max-md:max-w-full">
+                <div className="flex relative flex-col   w-full max-md:max-w-full">
           {/* <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/99f38121195e6973b08059816db7eb8f4bda5a2d0ae9e175443120b006c12e1f?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
             alt="Logo"
             className="object-contain aspect-square w-[60px]"
           /> */}
-          <div className="flex flex-wrap justify-between self-center  max-w-full w-[400px] max-md:mt-10">
+          <div className="flex flex-wrap justify-between self-center w-[200px] lg:w-[400px] max-md:mt-10">
             <div className="relative">
               <img
                 loading="lazy"
@@ -80,18 +80,18 @@ export const Hero = () => {
                 alt="Incident artwork"
                 className="object-contain w-full aspect-square rounded-full"
               />
-              <div className="absolute inset-0 size-[400px] rounded-full blur-sm animate-pulse shadow-[0px_0px_71px_rgba(243,146,49,1)]" />
+              <div className="absolute inset-0  rounded-full blur-sm animate-pulse shadow-[0px_0px_71px_rgba(243,146,49,1)]" />
             </div>
-            <div className="self-center text-center text-xl w-full mt-16 max-md:mt-10 max-md:mr-1.5 max-md:text-4xl">
+            <div className="self-center text-center text-xl w-full mt-16 max-md:mt-10 max-md:text-4xl">
               Incident
             </div>
             {/* <SocialIcons icons={socialIcons} /> */}
           </div>
-          <div className="self-center text-center mt-6 text-3xl text-yellow-800 uppercase max-md:max-w-full">
+          <div className="self-center text-center mt-6 w-1/2 lg:text-3xl text-yellow-800 uppercase max-md:max-w-full">
             UDBHAV - the rhythm of timeless essence
           </div>
         </div>
-        <div className="flex relative mt-8 w-full min-h-[141px] max-md:max-w-full" />
+        {/* <div className="flex relative mt-8 w-full min-h-[141px] max-md:max-w-full" /> */}
       </div>
     </div>
   );

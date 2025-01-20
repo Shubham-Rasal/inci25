@@ -35,7 +35,7 @@ const galleryImages = [
 
 export const Gallery = () => {
   return (
-    <div className="flex flex-col items-center mx-auto max-md:pl-5">
+    <div className="flex flex-col items-center mx-auto overflow-hidden max-md:pl-5">
       <div className="flex overflow-hidden flex-col justify-center items-center py-20 w-full  max-md:max-w-full">
         <div className="flex flex-col w-full max-w-[1676px] max-md:max-w-full">
           <img
@@ -44,7 +44,7 @@ export const Gallery = () => {
             alt="Main header image"
             className="object-contain self-center max-w-full aspect-[4.31] w-[270px]"
           />
-          <div className="grid grid-cols-3 mt-24 gap-10 mx-auto w-full max-md:grid-cols-1">
+          <div className="flex flex-wrap justify-center gap-10 mx-auto w-full max-md:flex-col mt-24">
             {galleryImages.map((image, index) => (
               <GalleryItem key={index} image={image} />
             ))}
