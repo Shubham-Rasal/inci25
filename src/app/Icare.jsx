@@ -22,7 +22,7 @@ export function cn(...inputs) {
 
 export default function Icare() {
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div id="i-care" className="flex flex-col items-center justify-center ">
       <ResponsiveImage
         src="/icare.png"
         alt="Incident 25 Logo"

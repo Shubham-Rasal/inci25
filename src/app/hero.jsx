@@ -1,5 +1,7 @@
 import * as React from "react";
 import Image from "next/image";
+import Navigation from "./Navigation";
+
 export const SocialIcons = ({ icons }) => {
   return (
     <div className="flex flex-col items-end my-auto max-w-full w-[179px]">
@@ -29,7 +31,6 @@ export const SocialIcons = ({ icons }) => {
     </div>
   );
 };
-
 
 export const Hero = () => {
   const socialIcons = [
@@ -64,7 +65,7 @@ export const Hero = () => {
             ))}
           </div>
         </div>
-                <div className="flex relative flex-col   w-full max-md:max-w-full">
+        <div className="flex relative flex-col   w-full max-md:max-w-full">
           {/* <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/99f38121195e6973b08059816db7eb8f4bda5a2d0ae9e175443120b006c12e1f?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
@@ -92,6 +93,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="h-20 bg-gradient-to-b from-transparent blur" />
+      <Navigation />
     </div>
   );
 };

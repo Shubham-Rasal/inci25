@@ -61,7 +61,7 @@ export default function Events() {
   };
 
   return (
-    <div className="relative w-full bg-[#1E0E03] py-20">
+    <div id="schedule" className="relative w-full bg-[#1E0E03] py-20">
       <div className="mx-auto max-w-7xl px-4">
         <h2 className="mb-16 text-center font-serif text-4xl text-[#c4a052]">
           Schedule
