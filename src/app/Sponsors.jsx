@@ -57,7 +57,7 @@ export const Gallery = () => {
 
 export const GalleryItem = ({ image }) => {
   return (
-    <div className="flex flex-col self-center justify-center items-center my-auto w-[201px]">
+    <div id="sponsors" className="flex flex-col self-center justify-center items-center my-auto w-[201px]">
       <img
         loading="lazy"
         src={image.src}
