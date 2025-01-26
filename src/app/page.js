@@ -8,6 +8,7 @@ import { Footer } from "./footer";
 import { Hero } from "./hero";
 import Events, { Schedule } from "./Events";
 import Icare from "./Icare";
+import FAQSection from "./faq";
 import Shows from "./Shows";
 
 const topBrands = [
@@ -93,6 +94,7 @@ export default function BrandShowcase() {
         <Gallery />
         <Icare />
         <TshirtOrder />
+        <FAQSection />
         <Footer />
       </div>
     </>
