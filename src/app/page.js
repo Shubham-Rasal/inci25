@@ -10,6 +10,7 @@ import Events, { Schedule } from "./Events";
 import Icare from "./Icare";
 import FAQSection from "./faq";
 import Shows from "./Shows";
+import Snake from "./Snake";
 
 const topBrands = [
   {
@@ -94,6 +95,7 @@ export default function BrandShowcase() {
         <Gallery />
         <Icare />
         <TshirtOrder />
+        <Snake/>
         <FAQSection />
         <Footer />
       </div>
