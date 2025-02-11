@@ -16,13 +16,13 @@ function Navlink({ href, displayText }) {
 
 export default function Navigation() {
   const links = [
-    {href: "#about-us", id: 1, displayText: "About us"},
-    {href: "#events", id: 2, displayText: "Events"},
-    {href: "#schedule", id: 3, displayText: "Schedules"},
-    {href: "#sponsors", id: 4, displayText: "Sponsers"},
-    {href: "#i-care", id: 5, displayText: "I-Care"},
-    {href: "#merch", id: 6, displayText: "Merchandise"},
-    {href: "#", id: 7, displayText: "FAQs"},
+    { href: "#about-us", id: 1, displayText: "About us" },
+    { href: "#events", id: 2, displayText: "Events" },
+    { href: "#schedule", id: 3, displayText: "Schedules" },
+    { href: "#sponsors", id: 4, displayText: "Sponsers" },
+    { href: "#i-care", id: 5, displayText: "I-Care" },
+    { href: "#merch", id: 6, displayText: "Merchandise" },
+    { href: "#faqs", id: 7, displayText: "FAQs" },
   ];
 
   return <div className="absolute right-0 top-[50vh] -translate-y-1/2 flex flex-col w-max gap-2 overflow-hidden py-4">
