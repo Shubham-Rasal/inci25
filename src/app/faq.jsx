@@ -70,12 +70,12 @@ const FAQSection = () => {
   ];
 
   return (
-    <div id="faqs" className="p-4 select-none flex items-start justify-between">
+    <div id="faqs" className="p-4 select-none flex flex-wrap items-start justify-evenly gap-4">
       <Image
         src="/faq.png"
         alt="FAQ Illustration"
         width={400}
-        height={300}
+        height={800}
       />
 
       <AccordionProvider>
