@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { Facebook } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 export const SocialIcon = ({ src, elem, alt }) => (
   elem ? elem : <img
@@ -46,10 +46,9 @@ function Navigation() {
 }
 
 const socialIcons = [
-  { id: 1, src: 'https://cdn.builder.io/api/v1/image/assets/TEMP/d4aa904acdcbc811188b1c1bda2b9fcf0ff464920a8135fe749b20b2630ced3a?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5', alt: 'Social Media Icon 1' },
+  { id: 1, elem: <Twitter className="text-[#755D21] size-[32px]" /> },
   { id: 2, elem: <Facebook className="text-[#755D21] size-[32px]" /> },
-  // { id: 2, src: 'https://cdn.builder.io/api/v1/image/assets/TEMP/2debe8bb03a9dea3f94dde4248857130164b36a0c82b1caaa637eed082655ab3?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5', alt: 'Social Media Icon 2' },
-  { id: 3, src: 'https://cdn.builder.io/api/v1/image/assets/TEMP/e797c8e0284b2f1062f634fd44f2c6a194a6b763ad69ee39c588ae0e56d70a94?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5', alt: 'Social Media Icon 3' }
+  { id: 3, elem: <Instagram className="text-[#755D21] size-[32px]" /> },
 ];
 
 function SocialIcons({ socialIcons }) {
@@ -67,8 +66,8 @@ function ContactEmail() {
 }
 
 export const Footer = () => {
-  return <div className="relative grid grid-cols-2 bg-gradient-to-b from-[#1E0E03] via-[#120802] to-black items-end font-mono p-8 max-md:grid-cols-1">
-    <div className="text-[7vw] max-md:text-[8vw]">Incident</div>
+  return <div className="relative grid grid-cols-2 items-end bg-gradient-to-b from-[#1E0E03] via-[#120802] to-black p-8 max-md:grid-cols-1">
+    <div className="text-[10vw] relative md:top-12 select-none max-md:text-[20vw] text-transparent bg-clip-text bg-gradient-to-b from-[#755D21] to-[#1E0E03]">Incident</div>
 
     <span className="max-md:hidden w-[1px] -translate-x-full absolute top-0 left-1/2 block h-full bg-gradient-to-b from-transparent via-[#D1BD86] to-transparent " />
 
@@ -80,5 +79,5 @@ export const Footer = () => {
         <SocialIcons socialIcons={socialIcons} />
       </div>
     </div>
-  </div >
+  </div>
 }
