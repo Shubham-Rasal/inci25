@@ -43,9 +43,9 @@ export const Hero = () => {
 
   return (
     <div className="flex overflow-hidden flex-col">
-      <div className="flex relative items-center flex-col pt-11 w-full min-h-[840px]  max-md:max-w-full">
-        <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-amber-950 to-transparent blur-xs">
-          <div className="grid grid-cols-12 gap-1 -z-10">
+      <div className="flex relative items-center flex-col pt-11 w-full   max-md:max-w-full">
+        <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-amber-950/20 to-transparent blur-xs">
+          <div className="grid grid-cols-12 gap-4 lg:gap-2 -z-10">
             {[...Array(12)].map((_, i) => (
               <div key={i} className="relative flex flex-col h-full">
                 <div className={`${i % 2 === 0 ? 'animate-vertical-marquee' : 'animate-vertical-marquee-reverse'} flex flex-col`}>
@@ -56,7 +56,9 @@ export const Hero = () => {
                         width={60}
                         height={60}
                         alt="Letter"
-                        className="object-contain aspect-square size-8"
+                        className={`object-contain aspect-square size-8 transition-all duration-500 hover:animate-glow-infinite hover:filter hover:drop-shadow-[0_0_25px_rgba(243,146,49,0.95)] ${
+                          Math.random() < 0.08 ? 'animate-glow-infinite filter drop-shadow-[0_0_25px_rgba(243,146,49,0.95)]' : ''
+                        }`}
                       />
                     </div>
                   ))}
@@ -78,16 +80,16 @@ export const Hero = () => {
                 loading="lazy"
                 src="/logo.png"
                 alt="Incident artwork"
-                className="object-contain w-full aspect-square rounded-full"
+                className="object-contain w-full aspect-square rounded-full select-none"
               />
               <div className="absolute inset-0  rounded-full blur-sm animate-pulse shadow-[0px_0px_71px_rgba(243,146,49,1)]" />
             </div>
-            <div className="self-center text-center text-xl w-full mt-16 max-md:mt-10 max-md:text-4xl">
+            <div className="self-center text-center text-6xl w-full mt-16 lg:text-8xl">
               Incident
             </div>
             {/* <SocialIcons icons={socialIcons} /> */}
           </div>
-          <div className="self-center text-center mt-6 w-1/2 lg:text-3xl text-yellow-800 uppercase max-md:max-w-full">
+          <div className="self-center text-center mt-6 lg:w-1/2 text-2xl lg:text-4xl text-yellow-200 uppercase max-md:max-w-full">
             UDBHAV - the rhythm of timeless essence
           </div>
         </div>

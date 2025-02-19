@@ -6,11 +6,12 @@ import { Gallery } from "./Sponsors";
 import { ResponsiveImage, TshirtOrder } from "./Merch";
 import { Footer } from "./footer";
 import { Hero } from "./hero";
-import Events, { Schedule } from "./Events";
+import Events from "./Events";
 import Icare from "./Icare";
 import FAQSection from "./faq";
 import Shows from "./Shows";
 import Snake from "./Snake";
+import Brochures from "./Brochures";
 
 const topBrands = [
   {
@@ -75,7 +76,7 @@ export default function BrandShowcase() {
     <>
       <div className="flex flex-col overflow-hidden">
         <Hero />
-        <div id="about-us" className="flex flex-col items-center justify-center mx-auto max-md:pl-5">
+        <div id="about-us" className="flex flex-col items-center justify-center mx-auto mt-16">
           <ResponsiveImage
             src="/about.png"
             alt="Additional design element"
@@ -91,11 +92,13 @@ export default function BrandShowcase() {
           />
         </div>
         <Shows />
+        
         <Events />
         <Gallery />
         <Icare />
+        <Brochures />
         <TshirtOrder />
-        <Snake/>
+        {/* <Snake/> */}
         <FAQSection />
         <Footer />
       </div>
