@@ -4,17 +4,24 @@ import { motion, useAnimationControls } from "framer-motion";
 
 const ScrollRoll = () => {
   return <>
-    <img src="/top-hor.png" className="w-screen md:hidden" />
+    <img src="/top-hor.png" className="w-screen md:hidden " />
     <img src="/top.png" className="h-screen max-md:hidden" />
   </>
 }
 
 const ScrollBody = ({ children, isOpen }) => {
-  return <div className={`grid overflow-hidden place-items-center text-black relative duration-300 ease-in-out max-md:w-full md:h-screen
+  return <div className={`grid overflow-hidden place-items-center text-black relative duration-700 ease-in-out max-md:w-full md:h-screen
       ${isOpen ? "md:w-full max-md:h-[50vh]" : "md:w-0 max-md:h-0"}`}>
       <img src="/scroll.png" className="absolute object-cover h-full max-md:hidden" />
       <img src="/scroll-hor.png" className="absolute object-cover w-full h-full md:hidden" />
-      <p className="relative p-8 text-[#5d4b20]">{children}</p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        className="relative p-8 text-3xl text-[#5d4b20]"
+      >
+        {children}
+      </motion.p>
     </div>
 }
 
@@ -26,7 +33,7 @@ const Roll = () => {
   };
 
   return (
-    <div onClick={toggleScroll} className="flex p-4 cursor-pointer items-center justify-left
+    <div onClick={toggleScroll} className="flex p-4 cursor-pointer items-center justify-center
       max-md:flex-col">
       <ScrollRoll />
       <ScrollBody isOpen={isOpen}>

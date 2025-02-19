@@ -1,15 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const samarkan = localFont({
+  src: "./fonts/samarkan/saman.ttf",
+  variable: "--font-samarkan",
 });
 
 export const metadata = {
@@ -21,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[#260F00] antialiased`}
+        className={`${samarkan.variable} font-samarkan bg-[#1E0E03] antialiased`}
       >
         {children}
       </body>
