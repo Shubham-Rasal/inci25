@@ -10,6 +10,7 @@ import Events, { Schedule } from "./Events";
 import Icare from "./Icare";
 import FAQSection from "./faq";
 import Shows from "./Shows";
+import Competitons from "./Competitons";
 
 const topBrands = [
   {
@@ -74,7 +75,10 @@ export default function BrandShowcase() {
     <>
       <div className="flex flex-col overflow-hidden">
         <Hero />
-        <div id="about-us" className="flex flex-col items-center justify-center mx-auto max-md:pl-5">
+        <div
+          id="about-us"
+          className="flex flex-col items-center justify-center mx-auto max-md:pl-5"
+        >
           <ResponsiveImage
             src="/about.png"
             alt="Additional design element"
@@ -82,7 +86,10 @@ export default function BrandShowcase() {
           />
         </div>
         <Roll />
-        <div id="events" className="flex flex-col items-center justify-center mx-auto max-md:pl-5">
+        <div
+          id="events"
+          className="flex flex-col items-center justify-center mx-auto max-md:pl-5"
+        >
           <ResponsiveImage
             src="/events.png"
             alt="Additional design element"
@@ -93,6 +100,7 @@ export default function BrandShowcase() {
         <Events />
         <Gallery />
         <Icare />
+        <Competitons />
         <TshirtOrder />
         <FAQSection />
         <Footer />
