@@ -1,4 +1,5 @@
 "use client";
+import './globals.css'
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -36,7 +37,7 @@ export default function Events() {
         ref={snakeRef}
         className="flex"
       >
-        <div className="flex shrink-0 h-96 overflow-scroll-x">
+        <div className="flex shrink-0 h-96 w-full overflow-x-scroll">
           <Image
             src="/snake-left.svg"
             alt="Decorative snake pattern"

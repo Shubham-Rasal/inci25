@@ -65,12 +65,12 @@ export const TshirtOrder= () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-between shrink-0 basis-0 w-full max-md:max-w-full">
+          <div className="flex h-16 flex-row justify-between shrink-0 basis-0 w-full max-md:max-w-full">
 
             <ResponsiveImage
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/e69c87d0f1e1254f67ba598492526087fc368d6e4ba4807f39ca9c5f4e15fdea?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
               alt="Decorative element"
-              className="object-contain mt-10 aspect-[1.02] w-[60px]"
+               className="object-contain shrink-0 self-end mt-96 aspect-[0.98] w-[58px] max-md:mt-10"
               />
           <ResponsiveImage
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ab3cc9b0f6ddda4a8110b649b3fe625517bfed8cc4ce09620556cab333c4989?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5"
