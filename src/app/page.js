@@ -4,6 +4,7 @@ import { BrandLogo } from "./BrandLogo";
 import Roll from "./Roll";
 import { Gallery } from "./Sponsors";
 import { ResponsiveImage, TshirtOrder } from "./Merch";
+import {Accommodation} from "./Accomodation";
 import { Footer } from "./footer";
 import { Hero } from "./hero";
 import Events from "./Events";
@@ -98,6 +99,7 @@ export default function BrandShowcase() {
         <Icare />
         <Brochures />
         <TshirtOrder />
+        <Accommodation />
         {/* <Snake/> */}
         <FAQSection />
         <Footer />
