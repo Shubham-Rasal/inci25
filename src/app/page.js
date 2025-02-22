@@ -13,7 +13,7 @@ import FAQSection from "./faq";
 import Shows from "./Shows";
 import Snake from "./Snake";
 import Brochures from "./Brochures";
-import {Accommodation} from './testAcc'
+// import {Accommodation} from './testAcc'
 
 const topBrands = [
   {
@@ -103,7 +103,7 @@ export default function BrandShowcase() {
         <Accommodation />
         {/* <Snake/> */}
         <FAQSection />
-        <Accommodation />
+        {/* <Accommodation /> */}
         <Footer />
       </div>
     </>

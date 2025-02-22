@@ -60,8 +60,8 @@ export default function Brochures() {
         </div>
 
         <div className="flex flex-col gap-6 w-full items-center">
-          <BrochureButton text="PRE-INCI BROCHURE" />
-          <BrochureButton text="MARKETING BROCHURE" />
+          {/* <BrochureButton text="PRE-INCI BROCHURE" /> */}
+          {/* <BrochureButton text="MARKETING BROCHURE" /> */}
           <BrochureButton text="EVENT BROCHURE" />
         </div>
       </div>
