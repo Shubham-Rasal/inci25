@@ -13,6 +13,7 @@ import FAQSection from "./faq";
 import Shows from "./Shows";
 import Snake from "./Snake";
 import Brochures from "./Brochures";
+import NavMenu from './NavMenu'
 // import {Accommodation} from './testAcc'
 
 const topBrands = [
@@ -77,6 +78,7 @@ export default function BrandShowcase() {
   return (
     <>
       <div className="flex flex-col overflow-hidden">
+        <NavMenu />
         <Hero />
         <div id="about-us" className="flex flex-col items-center justify-center mx-auto mt-16">
           <ResponsiveImage
