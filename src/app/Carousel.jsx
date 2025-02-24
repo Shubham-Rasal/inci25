@@ -88,7 +88,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
             <div className="absolute inset-0  transition-all duration-1000" />
           )}
         </div>
-
+{/* 
         <article
           className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
             current === index ? "opacity-100 visible" : "opacity-0 invisible"
@@ -102,7 +102,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
               {button}
             </button>
           </div>
-        </article>
+        </article> */}
       </li>
     </div>
   );

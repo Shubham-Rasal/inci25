@@ -42,7 +42,7 @@ export const Hero = () => {
   ];
 
   return (
-    <div className="flex overflow-hidden flex-col">
+    <div className="flex overflow-hidden flex-col ">
       <div className="flex relative items-center flex-col pt-11 w-full   max-md:max-w-full">
         <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-amber-950/20 to-transparent blur-xs">
           <div className="grid grid-cols-12 gap-4 lg:gap-2 -z-10">
@@ -84,12 +84,12 @@ export const Hero = () => {
               />
               <div className="absolute inset-0  rounded-full blur-sm animate-pulse shadow-[0px_0px_71px_rgba(243,146,49,1)]" />
             </div>
-            <div className="self-center text-center text-6xl w-full mt-16 lg:text-8xl">
+            <div className="self-center text-center font-samarkan text-6xl w-full mt-16 lg:text-8xl">
               Incident
             </div>
             {/* <SocialIcons icons={socialIcons} /> */}
           </div>
-          <div className="self-center text-center mt-6 lg:w-1/2 text-2xl lg:text-4xl text-yellow-200 uppercase max-md:max-w-full">
+          <div className="self-center text-center font-samarkan mt-6 lg:w-1/2 text-2xl lg:text-4xl text-yellow-200 uppercase max-md:max-w-full">
             UDBHAV - the rhythm of timeless essence
           </div>
         </div>

@@ -14,8 +14,9 @@ import Shows from "./Shows";
 import Snake from "./Snake";
 import Brochures from "./Brochures";
 import NavMenu from './NavMenu'
+import Team from './Team'
 // import {Accommodation} from './testAcc'
-
+import Competitions from "./Competitions";
 const topBrands = [
   {
     src: "https://cdn.builder.io/api/v1/image/assets/TEMP/e1731f699472c5ddd460c27b3c2bd9f5975212714665004e37c7a5e5358a2857?placeholderIfAbsent=true&apiKey=0def968ddfc54ad08cb5c8196cfa1cf5",
@@ -97,15 +98,16 @@ export default function BrandShowcase() {
         </div>
         <Shows />
         
-        <Events />
+        {/* <Events /> */}
+        <Competitions />
         <Gallery />
         <Icare />
         <Brochures />
         <TshirtOrder />
         <Accommodation />
-        {/* <Snake/> */}
         <FAQSection />
         {/* <Accommodation /> */}
+        <Team/>
         <Footer />
       </div>
     </>
