@@ -4,7 +4,7 @@ import { BrandLogo } from "./BrandLogo";
 import Roll from "./Roll";
 import { Gallery } from "./Sponsors";
 import { ResponsiveImage, TshirtOrder } from "./Merch";
-import {Accommodation} from "./Accomodation";
+// import {Accommodation} from "./Accomodation";
 import { Footer } from "./footer";
 import { Hero } from "./hero";
 import Events from "./Events";
@@ -103,8 +103,8 @@ export default function BrandShowcase() {
         <Gallery />
         <Icare />
         <Brochures />
-        <TshirtOrder />
-        <Accommodation />
+        {/* <TshirtOrder /> */}
+        {/* <Accommodation /> */}
         <FAQSection />
         {/* <Accommodation /> */}
         <Team/>

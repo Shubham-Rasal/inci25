@@ -9,8 +9,8 @@ const menuItems = [
   { title: "Home", href: "/" },
   { title: "Brochures", href: "/brochures" },
   { title: "Workshops", href: "/workshops" },
-  { title: "Events", href: "/events" },
-  { title: "Accommodation", href: "#accommodation" },
+  { title: "Merchandise", href: "/merch" },
+  { title: "Accommodation", href: "/accommodation" },
 ]
 
 export default function NavMenu() {

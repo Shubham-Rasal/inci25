@@ -156,7 +156,7 @@ export default function Team() {
     {
       name: "MADHAV",
       role: "Inci Force",
-      image: "/team/team/Madhav.HEIC"
+      image: "/dance.png"
     },
     {
       name: "SAMEER KASHYAP",
@@ -189,7 +189,7 @@ export default function Team() {
       image: "/dance.png"
     },
     {
-      name: "VAIBHAV",
+      name: "VAIBHAV AGRAWAL",
       role: "Website Lead",
       image: "/dance.png"
     },
