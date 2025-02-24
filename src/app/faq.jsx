@@ -42,9 +42,9 @@ function FAQAccordion({ question, answer, id }) {
   return (
     <div
       onClick={toggleAccordion(id)}
-      className="border border-[#B98A15] p-4 rounded-lg cursor-pointer transition w-full max-w-md"
+      className="border border-[#B98A15] p-4 rounded-lg tracking-wide cursor-pointer transition w-full max-w-md"
     >
-      <div className="flex justify-between items-center font-bold">
+      <div className="flex justify-between tracking-wide items-center font-bold">
         <span>{question}</span>
         <ChevronDownIcon
           className={`text-[#B98A15] transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -106,7 +106,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <div id="faqs" className="p-4 select-none flex flex-wrap items-start justify-evenly gap-4">
+    <div id="faqs" className="p-4 select-none flex flex-wrap items-start justify-evenly gap-4 tracking-wide">
       <Image src="/faq.png" alt="FAQ Illustration" width={600} height={800} className="w-80 md:w-96" />
 
       <AccordionProvider>

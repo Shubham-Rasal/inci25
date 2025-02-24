@@ -21,7 +21,7 @@ export default function Team() {
     {
       name: "YATENDRA VERMA",
       role: "PG Advisor",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "VIVEK MISHRA",
@@ -31,12 +31,12 @@ export default function Team() {
     {
       name: "RAJ GAUTAM",
       role: "Marketing Head",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "ADITYA SHANKAR",
       role: "Marketing Head",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "CHETHAN SRINIVAS",
@@ -51,7 +51,7 @@ export default function Team() {
     {
       name: "PRAKHAR KHARYA",
       role: "Chief Co Ordinator",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "HARSH",
@@ -81,12 +81,12 @@ export default function Team() {
     {
       name: "RAHUL KRUZ",
       role: "Inci Logistics",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "YATENDRA",
       role: "Inci Logistics",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "MAYANK",
@@ -111,7 +111,7 @@ export default function Team() {
     {
       name: "RISHI",
       role: "Student Hospitality",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "NANCY",
@@ -131,7 +131,7 @@ export default function Team() {
     {
       name: "AYIMAAN MOHANTY",
       role: "Media Head",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "SHIVAM PATEL",
@@ -141,7 +141,7 @@ export default function Team() {
     {
       name: "VIVEK SAGAR",
       role: "Inci Store",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "PRINCE",
@@ -156,12 +156,12 @@ export default function Team() {
     {
       name: "MADHAV",
       role: "Inci Force",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "SAMEER KASHYAP",
       role: "Inci Force",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "PRASHANT",
@@ -186,17 +186,17 @@ export default function Team() {
     {
       name: "SRIGOWRI BHARGAV",
       role: "Creative Head",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "VAIBHAV AGRAWAL",
       role: "Website Lead",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "SHUBHAM SUBODH RASSAL",
       role: "Website Lead",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "SHRIKRISHNA",
@@ -231,7 +231,7 @@ export default function Team() {
     {
       name: "RAKSHATA",
       role: "Fest Curation",
-      image: "/dance.png"
+      image: "/guy.png"
     },
     {
       name: "LAKSHITH",
@@ -268,7 +268,7 @@ export default function Team() {
 function ProfileCard({ developer }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-[180px] h-[180px]">
+      <div className="relative w-[200px] h-[200px]">
         {/* Decorative Border */}
         <div className="absolute inset-0 w-full h-full">
           <svg viewBox="0 0 200 200" className="w-full h-full">
@@ -294,8 +294,8 @@ function ProfileCard({ developer }) {
           <Image
             src={developer.image}
             alt={`${developer.name}'s profile`}
-            width={160}
-            height={160}
+            width={200}
+            height={200}
             className="object-cover w-full h-full"
           />
         </div>
@@ -303,19 +303,10 @@ function ProfileCard({ developer }) {
 
       {/* Name and Role */}
       <div className="text-center mt-4 space-y-2">
-        <h2 className="text-[#DBAE3D] font-semibold text-lg">{developer.name}</h2>
-        <p className="text-[#DBAE3D] text-sm border border-[#DBAE3D] inline-block px-4 py-1">{developer.role}</p>
+        <h2 className="text-[#DBAE3D] font-semibold text-2xl tracking-wide">{developer.name}</h2>
+        <p className="text-[#DBAE3D] text-lg border border-[#DBAE3D] inline-block px-4 py-1">{developer.role}</p>
       </div>
 
-      {/* Social Icons */}
-      {developer.social && (
-        <div className="flex justify-center gap-6 mt-4">
-          <Github className="w-5 h-5 text-[#DBAE3D]" />
-          <Twitter className="w-5 h-5 text-[#DBAE3D]" />
-          <Linkedin className="w-5 h-5 text-[#DBAE3D]" />
-          <Facebook className="w-5 h-5 text-[#DBAE3D]" />
-        </div>
-      )}
     </div>
   )
 }
