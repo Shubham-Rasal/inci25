@@ -54,7 +54,7 @@ const BrochureButton = ({ text, href = "#", previewImage }) => {
 
 export default function Brochures() {
   return (
-    <div className="relative flex flex-col items-center justify-center py-20 px-4 bg-[#1E0E03] overflow-hidden">
+    <div id="brochure" className="relative flex flex-col items-center justify-center py-20 px-4 bg-[#1E0E03] overflow-hidden">
       {/* Background Glow Effect */}
       <div className="absolute top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#D4A41B] opacity-[0.10] blur-[150px] animate-pulse duration-1000" />
 

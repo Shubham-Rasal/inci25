@@ -17,9 +17,11 @@ function Navlink({ href, displayText }) {
 export default function Navigation() {
   const links = [
     { href: "#about-us", id: 1, displayText: "About us" },
-    { href: "#sponsors", id: 4, displayText: "Sponsers" },
-    { href: "#i-care", id: 5, displayText: "I-Care" },
-    { href: "#merch", id: 6, displayText: "Merchandise" },
+    { href: "#proShows", id: 2, displayText: "ProShows" },
+    { href: "#competition", id: 3, displayText: "Competitions" },
+    { href: "#sponsors", id: 4, displayText: "Sponsors" },
+    { href: "#i-care", id: 5, displayText: "ICare" },
+    { href: "#brochure", id: 6, displayText: "Brochure" },
     { href: "#faqs", id: 7, displayText: "FAQs" },
   ];
 

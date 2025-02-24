@@ -106,7 +106,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <div id="faqs" className="p-4 select-none flex flex-wrap items-start justify-evenly gap-4 tracking-wide">
+    <div id="faqs" className="px-3 py-10 select-none flex flex-wrap items-start justify-evenly gap-4 tracking-wide">
       <Image src="/faq.png" alt="FAQ Illustration" width={600} height={800} className="w-80 md:w-96" />
 
       <AccordionProvider>

@@ -79,7 +79,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
               opacity: current === index ? 1 : 0.5,
             }}
             alt={title}
-            src={`/event.png`}
+            src={src}
             onLoad={imageLoaded}
             loading="eager"
             decoding="sync"
@@ -204,17 +204,17 @@ export function Carousel({ slides }) {
         ))}
       </ul>
 
-      <div className="absolute inset-0 top-64 flex lg:mt-48 mt-2 items-center justify-between">
+      <div className="absolute inset-0 top-64 flex lg:mt-32 mt-2 items-center justify-between">
         <button
           type="button"
-          className="rounded-full p-4 shadow-lg"
+          className="rounded-full p-4 "
           onClick={handlePreviousClick}
         >
           <img src="/ra.svg" alt="Arrow" className="object-contain w-full h-full z-30" />
         </button>
         <button
           type="button"
-          className="rounded-full p-4 shadow-lg"
+          className="rounded-full p-4 "
           onClick={handleNextClick}
         >
           <img src="/la.svg" alt="Arrow" className="object-contain w-full h-full" />
