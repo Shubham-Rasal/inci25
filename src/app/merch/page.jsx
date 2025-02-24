@@ -2,11 +2,13 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import { Footer } from '../footer';
 
 export default function Merch() {
   const router = useRouter();
 
   return (
+    <>
     <div id="merch" className="flex overflow-hidden flex-col px-10 py-10 max-md:mt-10 lg:w-4/5 lg:mx-auto max-md:px-5 max-md:py-24">
       <div className="relative flex items-center justify-center w-full px-4 md:px-0">
         <button onClick={() => router.back()} className="absolute left-4 md:left-0 w-[40px] h-[40px] md:w-[60px] md:h-[60px]">
@@ -78,14 +80,18 @@ export default function Merch() {
         </div>
       </div>
     </div>
+      <Footer />
+
+    </>
+
   );
 }
 
-export const ResponsiveImage = ({ src, alt, className }) => {
+const ResponsiveImage = ({ src, alt, className }) => {
   return <img loading="lazy" src={src} alt={alt} className={className} />;
 };
 
-export const BorderedCircle = ({ children }) => {
+ const BorderedCircle = ({ children }) => {
   return (
     <div className="flex flex-col justify-center p-1.5 rounded-full border border-yellow-600 border-solid">
       <div className="flex flex-col justify-center p-1.5 rounded-full border border-yellow-600 border-dashed">
