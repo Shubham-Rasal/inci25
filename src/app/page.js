@@ -103,7 +103,7 @@ export default function BrandShowcase() {
         <Gallery />
         <Icare />
         <Brochures />
-        {/* <TshirtOrder /> */}
+        <TshirtOrder />
         {/* <Accommodation /> */}
         <FAQSection />
         {/* <Accommodation /> */}

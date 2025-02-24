@@ -48,15 +48,17 @@ const BrochureButton = ({ text, href = "#" }) => {
 
 export default function Brochures() {
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen py-20 px-4 bg-[#1E0E03] overflow-hidden scrollbar-custom">
+    <div className="relative  flex flex-col items-center justify-center py-20 px-4 bg-[#1E0E03] overflow-hidden scrollbar-custom">
       {/* Background glow blob */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#D4A41B] opacity-[0.15] blur-[100px]" />
+      {/* <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#D4A41B] opacity-[0.15] blur-[100px]" /> */}
       
-      <div className="relative z-10 overflow-y-auto max-h-screen scrollbar-custom">
+      <div className="relative z-10 overflow-y-auto scrollbar-custom">
         <h1 className="text-center text-white text-4xl mb-4 uppercase">brochures</h1>
         
         <div className="max-w-4xl text-center mb-16 text-white px-4">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          <p>
+            The brochures are available for download below.
+          </p>
         </div>
 
         <div className="flex flex-col gap-6 w-full items-center">

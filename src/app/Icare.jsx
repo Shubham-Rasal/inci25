@@ -2,16 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 const iCareCards = [
-  { id: 1, title: 'Beach Schooling', description: 'Tutoring underprivileged students near NITK in the evenings.' },
-  { id: 2, title: 'Educational Essentials', description: 'Providing school bags, stationery, notebooks, and other educational materials.' },
-  { id: 3, title: 'Medical Support', description: 'Distributing sanitisers and masks to ensure student safety.' },
-  { id: 4, title: 'Social Initiatives', description: 'Organizing paper recycling, cloth collection drives, and orphanage visits.' },
-  { id: 5, title: 'Community Development', description: 'Focusing on social awareness, health, rural development, and gender equality.' }
-];
+  { id: 1, title: 'Beach Schooling', image:"/icare/ic1.webp" },
+  { id: 2, title: 'Educational Essentials', image:"/icare/ic2.webp" },
+  { id: 3, title: 'Medical Support', image:"/icare/ic3.webp" },
+]
 
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { ResponsiveImage } from './Merch';
+import Image from 'next/image';
 
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
@@ -129,33 +128,9 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}>
         {items.map((item, idx) => (
-          <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
-            key={item.name}>
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>
-              <span
-                className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.description}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.id}
-                  </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
-                </span>
-              </div>
-            </blockquote>
-          </li>
+          
+            <Image src={item.image} alt={item.title} width={600} height={400} className="w-full h-full object-contain aspect-[1.5] max-md:w-[600px] max-md:h-[200px]" />
+          
         ))}
       </ul>
     </div>)

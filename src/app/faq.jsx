@@ -54,7 +54,7 @@ function FAQAccordion({ question, answer, id }) {
         className={`overflow-hidden transition-all duration-300`}
         style={{ maxHeight: isOpen ? `${contentHeight}px` : '0px' }}
       >
-        <p ref={contentRef} className="mt-1 text-gray-700">
+        <p ref={contentRef} className="mt-1 text-gray-500">
           {answer}
         </p>
       </div>

@@ -81,9 +81,7 @@ export default function Merch() {
       </div>
     </div>
       <Footer />
-
-    </>
-
+      </>
   );
 }
 

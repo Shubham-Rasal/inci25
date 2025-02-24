@@ -94,15 +94,15 @@ export default function CompetitionsPage() {
           <button
             key={id}
             onClick={() => setSelectedCategory(id)}
-            className={`flex flex-col items-center min-w-[100px] ${
+            className={`flex flex-col items-center min-w-[120px] p-2 shadow-md ${
               selectedCategory === id ? "text-yellow-400" : "text-yellow-500/60"
             }`}
           >
             <div
-              className={`w-16 h-16 rounded-full border-2 flex items-center justify-center mb-2 
-              ${selectedCategory === id ? "border-yellow-400 bg-yellow-400/10" : "border-yellow-500/60"}`}
+              className={`size-24 rounded-full border-2 flex items-center justify-center mb-2 
+              ${selectedCategory === id ? "border-yellow-400 bg-yellow-400/10 scale-110 shadow-lg shadow-yellow-400/50" : "border-yellow-500/60"}`}
             >
-              <Icon className="w-8 h-8" />
+              <Image src={'/allcat.png'} alt={label} width={100} height={100} className="object-cover" />
             </div>
             <span className="text-sm text-center">{label}</span>
           </button>

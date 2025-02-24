@@ -2,11 +2,13 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import { Footer } from '../footer';
 
 const Accommodation = () => {
   const router = useRouter();
 
   return (
+    <>
     <div id="accommodation" className="flex flex-col px-10 py-10 overflow-hidden max-md:mt-5 lg:w-4/5 lg:mx-auto max-md:px-5 max-md:py-24">
       <div className="relative flex items-center justify-center w-full px-4 md:px-0">
         <button onClick={() => router.back()} className="absolute left-4 md:left-0 w-[40px] h-[40px] md:w-[60px] md:h-[60px]">
@@ -56,6 +58,8 @@ const Accommodation = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

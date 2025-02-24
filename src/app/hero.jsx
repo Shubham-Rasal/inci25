@@ -78,7 +78,7 @@ export const Hero = () => {
             <div className="relative">
               <img
                 loading="lazy"
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Incident artwork"
                 className="object-contain w-full aspect-square rounded-full select-none"
               />
