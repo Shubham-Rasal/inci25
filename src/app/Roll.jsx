@@ -10,19 +10,19 @@ const ScrollRoll = () => {
 }
 
 const ScrollBody = ({ children, isOpen }) => {
-  return <div className={`grid overflow-hidden place-items-center text-black relative duration-700 ease-in-out max-md:w-full md:h-[70vh]
+  return <div className={`grid overflow-hidden place-items-center text-black relative duration-700 ease-in-out max-md:w-5/6 md:h-screen
       ${isOpen ? "md:w-full max-md:h-[50vh]" : "md:w-0 max-md:h-0"}`}>
-      <img src="/scroll.png" className="absolute object-cover h-full max-md:hidden" />
-      <img src="/scroll-hor.png" className="absolute object-cover w-full h-full md:hidden" />
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2, ease: "easeInOut" }}
-        className="relative p-8 lg:text-3xl text-2xl text-[#5d4b20]"
-      >
-        {children}
-      </motion.p>
-    </div>
+    <img src="/scroll.png" className="absolute object-cover h-full max-md:hidden" />
+    <img src="/scroll-hor.png" className="absolute object-cover w-full h-full md:hidden" />
+    <motion.p
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2, ease: "easeInOut" }}
+      className="relative p-8 text-[#5d4b20]"
+    >
+      {children}
+    </motion.p>
+  </div>
 }
 
 const Roll = () => {
