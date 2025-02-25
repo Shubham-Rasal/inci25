@@ -259,12 +259,19 @@ export default function CompetitionsPage() {
               </div>
             ))}
             {filteredCompetitions.length > 8 && (
-              <div className="col-span-full flex justify-center mt-8">
+              <div className="col-span-full h-fit flex justify-center items-start">
                 <a
                   href="/competitions"
-                  className="px-6 py-3 bg-yellow-500 text-[#1a0f02] rounded-lg font-bold hover:bg-yellow-400 transition-colors"
+                  className=""
                 >
-                  View All Events
+                  <div id="events" className="flex flex-col mt-8 items-center justify-center mx-auto max-md:pl-5 relative">
+                    <ResponsiveImage
+                      src="/titleslot.png"
+                      alt="Additional design element"
+                      className="object-contain `mt-1` w-96 aspect-[5.1] "
+                    />
+                    <div className="absolute text-3xl font-samarkan inset-0 flex h-full justify-center items-center text-[#fdc33c]">View All Events</div>
+                  </div>
                 </a>
               </div>
             )}
@@ -273,6 +280,6 @@ export default function CompetitionsPage() {
       </div>
     </div>
   );
-  
+
 }
 
