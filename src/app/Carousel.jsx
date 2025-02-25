@@ -204,20 +204,20 @@ export function Carousel({ slides }) {
         ))}
       </ul>
 
-      <div className="absolute inset-0 lg:top-64 top-32 flex lg:mt-32 mt-2 items-center justify-between">
+      <div className="absolute inset-0 lg:top-64 top-32 flex gap-4 lg:mt-32 mt-2 items-center justify-between">
         <button
           type="button"
-          className="rounded-full p-4 "
+          className="rounded-full  size-96 " // Increased padding for smaller devices
           onClick={handlePreviousClick}
         >
-          <img src="/ra.svg" alt="Arrow" className="object-contain w-full h-full z-30" />
+          <img src="/ra.svg" alt="Arrow" className="object-contain  z-30" />
         </button>
         <button
           type="button"
-          className="rounded-full p-4 "
+          className="rounded-full  size-96 " // Increased padding for smaller devices
           onClick={handleNextClick}
         >
-          <img src="/la.svg" alt="Arrow" className="object-contain w-full h-full" />
+          <img src="/la.svg" alt="Arrow" className="object-contain  z-30" />
         </button>
       </div>
     </div>
