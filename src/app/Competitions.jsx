@@ -214,16 +214,13 @@ export const competitions = [
 export default function CompetitionsPage() {
   const [selectedCategory, setSelectedCategory] = useState("all")
 
- 
-
-  
 
   const filteredCompetitions = competitions.filter(competition =>
     selectedCategory === "all" ? true : competition.categories.includes(selectedCategory),
   )
 
   return (
-    <div id="competition" className="min-h-screen bg-[#1a0f02] text-yellow-500 p-6">
+    <div id="competition" className="min-h-screen  text-yellow-500 p-6">
       <div className="text-center items-center w-full flex justify-center mb-12">
         <ResponsiveImage src="/comp.png" alt="Competitions" className="object-contain mt-12 w-96 aspect-[5.1]" />
       </div>
