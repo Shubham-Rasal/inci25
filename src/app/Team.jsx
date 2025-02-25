@@ -34,6 +34,11 @@ export default function Team() {
       image: "/guy.png"
     },
     {
+      name: "ASHWANI KUMAR",
+      role: "Creative Head",
+      image: "/team/team/Ashwani.jpg"
+    },
+    {
       name: "ADITYA SHANKAR",
       role: "Marketing Head",
       image: "/guy.png"
@@ -86,7 +91,7 @@ export default function Team() {
     {
       name: "YATENDRA",
       role: "Inci Logistics",
-      image: "/guy.png"
+      image: "/team/team/Yatendra.jpg"
     },
     {
       name: "MAYANK",
@@ -174,11 +179,6 @@ export default function Team() {
       image: "/team/team/Aashish.jpg"
     },
     {
-      name: "ASHWANI KUMAR",
-      role: "Creative Head",
-      image: "/team/team/Ashwani.jpg"
-    },
-    {
       name: "ALEKYA",
       role: "Creative Head",
       image: "/team/team/Alekya.jpg"
@@ -186,17 +186,17 @@ export default function Team() {
     {
       name: "SRIGOWRI BHARGAV",
       role: "Creative Head",
-      image: "/guy.png"
+      image: "/team/team/Srigowri.jpg"
     },
     {
       name: "VAIBHAV AGRAWAL",
       role: "Website Lead",
-      image: "/guy.png"
+      image: "/team/team/Vaibhav.jpeg"
     },
     {
       name: "SHUBHAM SUBODH RASSAL",
       role: "Website Lead",
-      image: "/guy.png"
+      image: "/team/team/shubham.jpeg"
     },
     {
       name: "SHRIKRISHNA",
@@ -249,7 +249,10 @@ export default function Team() {
       <div className="flex justify-center mb-16">
         <div className="relative">
           <div className="absolute inset-0  transform skew-x-12"></div>
-          <h1 className="relative px-8 py-2 text-6xl font-semibold">Team </h1>
+          <h1 className="relative px-8 py-2 text-6xl font-semibold">Team that made it all possible </h1>
+          <p className="text-2xl text-gray-400 py-2 font-semibold">
+            A team of dedicated individuals who worked tirelessly to make this event a success.
+          </p>
         </div>
       </div>
 

@@ -31,12 +31,13 @@ export default function BrandShowcase() {
           />
         </div>
         <Roll />
-        <div id="events" className="flex flex-col items-center justify-center mx-auto max-md:pl-5">
+        <div id="events" className="flex flex-col mt-8 items-center justify-center mx-auto max-md:pl-5 relative">
           <ResponsiveImage
-            src="/events.png"
+            src="/slot.png"
             alt="Additional design element"
-            className="object-contain mt-12 w-96 aspect-[5.1] max-md:mt-10"
+            className="object-contain `mt-1` w-96 aspect-[5.1] "
           />
+          <div className="absolute text-3xl font-samarkan inset-0 flex h-full justify-center items-center text-[#c2952d]">Pro Shows</div>
         </div>
         <Shows />
         

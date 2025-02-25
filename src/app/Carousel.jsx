@@ -48,7 +48,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
   const { src, button, title } = slide;
 
   return (
-    <div className="[perspective:1200px] ">
+    <div className="[perspective:900px] ">
       <li
         ref={slideRef}
         className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[40vmin] h-full mx-[4vmin] z-10 "
@@ -74,7 +74,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
           }}
         >
           <img
-            className="absolute inset-0  object-cover opacity-100 transition-opacity duration-600 ease-in-out"
+            className="absolute inset-0  object-cover opacity-100 scale-110  transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
@@ -204,7 +204,7 @@ export function Carousel({ slides }) {
         ))}
       </ul>
 
-      <div className="absolute inset-0 top-64 flex lg:mt-32 mt-2 items-center justify-between">
+      <div className="absolute inset-0 lg:top-64 top-32 flex lg:mt-32 mt-2 items-center justify-between">
         <button
           type="button"
           className="rounded-full p-4 "

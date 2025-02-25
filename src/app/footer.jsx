@@ -13,17 +13,17 @@ export const SocialIcon = ({ src, elem, alt }) => (
 
 const navigationData = [
   [
-    { display: 'Home', link: "#", id: 1 },
-    { display: 'Team', link: "#", id: 1 },
-    { display: 'Sponsors', link: "#", id: 1 },
+    { display: 'Home', link: "/", id: 1 },
+    { display: 'Team', link: "/team", id: 1 },
+    { display: 'Sponsors', link: "/#sponsors", id: 1 },
   ], [
-    { display: 'Merchandise', link: "#", id: 1 },
-    { display: 'Pro-show', link: "#", id: 1, active: true },
-    { display: 'Events', link: "#", id: 1 },
+    { display: 'Merchandise', link: "/merch", id: 1 },
+    { display: 'Pro-show', link: "/#proshows", id: 1, active: true },
+    { display: 'Competitions', link: "/competitions", id: 1 },
   ], [
-    { display: 'I-care', link: "#", id: 1 },
-    { display: 'FAQs', link: "#", id: 1 },
-    { display: 'About us', link: "#", id: 1 }
+    { display: 'I-care', link: "/#icare", id: 1 },
+    { display: 'FAQs', link: "/#faqs", id: 1 },
+    { display: 'About us', link: "/#aboutus", id: 1 }
   ]
 ];
 
