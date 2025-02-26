@@ -11,22 +11,12 @@ export default function Team() {
     {
       name: "MANVENDRA SOLANKI",
       role: "Co Convenor",
-      image: "/team/team/Manvendra .jpg"
-    },
-    {
-      name: "PRASHANT",
-      role: "Fest Moderator",
-      image: "/team/team/Prashant Singh.jpg"
-    },
-    {
-      name: "YATENDRA VERMA",
-      role: "PG Advisor",
-      image: "/guy.png"
+      image: "/team/team/manvinder.png"
     },
     {
       name: "VIVEK MISHRA",
       role: "Marketing Head",
-      image: "/team/team/Vivek.jpg"
+      image: "/team/team/vivek_mishra.png"
     },
     {
       name: "RAJ GAUTAM",
@@ -34,14 +24,29 @@ export default function Team() {
       image: "/guy.png"
     },
     {
+      name: "PRASHANT",
+      role: "Fest Moderator",
+      image: "/team/team/Prashant Singh.jpg"
+    },
+    {
       name: "ASHWANI KUMAR",
       role: "Creative Head",
       image: "/team/team/Ashwani.jpg"
     },
+    // {
+    //   name: "ADITYA SHANKAR",
+    //   role: "Marketing Head",
+    //   image: "/guy.png"
+    // },
     {
-      name: "ADITYA SHANKAR",
-      role: "Marketing Head",
-      image: "/guy.png"
+      name: "HARSH",
+      role: "Treasurer",
+      image: "/team/team/Harsh.jpg"
+    },
+    {
+      name: "KARTIKEY TIWARI",
+      role: "Administrative Affairs",
+      image: "/team/team/kartikey formal nk.jpg"
     },
     {
       name: "CHETHAN SRINIVAS",
@@ -59,11 +64,6 @@ export default function Team() {
       image: "/guy.png"
     },
     {
-      name: "HARSH",
-      role: "Treasurer",
-      image: "/team/team/Harsh.jpg"
-    },
-    {
       name: "BHAVYA JAIN",
       role: "Treasurer",
       image: "/team/team/Bhavya_Jain.jpg"
@@ -77,6 +77,11 @@ export default function Team() {
       name: "CHANDAN",
       role: "Publicity",
       image: "/team/team/Chandan_Rawat.jpg"
+    },
+    {
+      name: "DHIRAJ",
+      role: "Fest Advisor",
+      image: "/team/team/Dhiraj .jpg"
     },
     {
       name: "SIDDU",
@@ -127,11 +132,6 @@ export default function Team() {
       name: "DHRUV GUPTA",
       role: "Fest Advisor",
       image: "/team/team/DHRUV_GUPTA.JPG"
-    },
-    {
-      name: "DHIRAJ",
-      role: "Fest Advisor",
-      image: "/team/team/Dhiraj .jpg"
     },
     {
       name: "AYIMAAN MOHANTY",
@@ -186,12 +186,12 @@ export default function Team() {
     {
       name: "SRIGOWRI BHARGAV",
       role: "Creative Head",
-      image: "/team/team/Srigowri.jpg"
+      image: "/team/team/srigowri.png"
     },
     {
       name: "VAIBHAV AGRAWAL",
       role: "Website Lead",
-      image: "/team/team/Vaibhav.jpeg"
+      image: "/guy.png  "
     },
     {
       name: "SHUBHAM SUBODH RASSAL",
@@ -212,11 +212,6 @@ export default function Team() {
       name: "LUKESHWAR",
       role: "Production Head",
       image: "/team/team/Lukeshwar.jpg"
-    },
-    {
-      name: "KARTIKEY TIWARI",
-      role: "Administrative Affairs",
-      image: "/team/team/kartikey formal nk.jpg"
     },
     {
       name: "SHREYANG",
