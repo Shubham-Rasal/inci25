@@ -25,7 +25,7 @@ export default function Navigation() {
     { href: "#faqs", id: 7, displayText: "FAQs" },
   ];
 
-  return <div className="absolute right-0 top-[50vh] -translate-y-1/2 flex-col w-max gap-3 overflow-hidden py-4 hidden md:flex">
+  return <div className="absolute right-0 top-[50vh] -translate-y-1/2 flex-col w-max gap-3 overflow-hidden py-4 hidden lg:flex">
     {links.map(link => <Navlink key={link.id} {...link} />)}
   </div>
 } 

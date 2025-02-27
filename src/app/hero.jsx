@@ -42,7 +42,7 @@ export const Hero = () => {
   ];
 
   return (
-    <div className="flex overflow-hidden flex-col ">
+    <div className="relative flex overflow-hidden flex-col ">
       <div className="flex relative items-center flex-col pt-11 w-full   max-md:max-w-full">
         <div className="absolute inset-0 h-full w-full flex flex-col bg-gradient-to-t from-transparent via-amber-950/20 to-transparent blur-xs">
           <div className="grid grid-cols-12 gap-4 lg:gap-2 -z-10">

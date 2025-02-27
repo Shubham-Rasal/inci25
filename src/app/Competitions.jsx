@@ -470,7 +470,7 @@ export default function CompetitionsPage() {
             <p className="text-md sm:text-lg">{date}</p>
             <p className="text-md sm:text-lg">{location}</p>
             <p className="text-sm text-yellow-400">{time}</p>
-            <a href={link} target="_blank" className="mt-4 inline-block bg-yellow-500 text-black px-4 py-2 rounded-md font-bold text-center w-full">Register</a>
+            <a href={link} target="_blank" className="mt-4 inline-block bg-yellow-400 text-black px-4 py-2 rounded-md font-bold text-center w-full">Register</a>
           </div>
         ))
       )}
