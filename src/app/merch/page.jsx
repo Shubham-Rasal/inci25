@@ -3,17 +3,20 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Footer } from '../footer';
+import NavMenu from '../NavMenu';
+
 
 export default function Merch() {
   const router = useRouter();
 
   return (
     <>
+    <NavMenu />
     <div id="merch" className="flex overflow-hidden flex-col px-10 py-10 max-md:mt-10 lg:w-4/5 lg:mx-auto max-md:px-5 max-md:py-24">
       <div className="relative flex items-center justify-center w-full px-4 md:px-0">
-        <button onClick={() => router.back()} className="absolute left-4 md:left-0 w-[40px] h-[40px] md:w-[60px] md:h-[60px]">
+        {/* <button onClick={() => router.back()} className="absolute left-4 md:left-0 w-[40px] h-[40px] md:w-[60px] md:h-[60px]">
           <ResponsiveImage src="/Frame 1171275940.png" alt="Back sign" className="w-full h-full object-contain" />
-        </button>
+        </button> */}
         <ResponsiveImage
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/df5261bde5c5f1fa859e56b5964ed974161902823418d087bb930caafb6fc2bf"
           alt="Incident 25 Logo"

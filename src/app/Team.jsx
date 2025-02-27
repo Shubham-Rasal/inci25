@@ -5,7 +5,7 @@ export default function Team() {
   const developers = [
     {
       name: "VANSH JAISWAL",
-      role: "Convener",
+      role: "Convenor",
       image: "/team/team/Vansh.jpg"
     },
     {

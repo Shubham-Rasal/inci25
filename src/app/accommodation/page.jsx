@@ -3,17 +3,19 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Footer } from '../footer';
+import NavMenu from '../NavMenu';
 
 const Accommodation = () => {
   const router = useRouter();
 
   return (
     <>
+    <NavMenu />
     <div id="accommodation" className="flex flex-col px-10 py-10 overflow-hidden max-md:mt-5 lg:w-4/5 lg:mx-auto max-md:px-5 max-md:py-24">
       <div className="relative flex items-center justify-center w-full px-4 md:px-0">
-        <button onClick={() => router.back()} className="absolute left-4 md:left-0 w-[40px] h-[40px] md:w-[60px] md:h-[60px]">
+        {/* <button onClick={() => router.back()} className="absolute left-4 md:left-0 w-[40px] h-[40px] md:w-[60px] md:h-[60px]">
           <ResponsiveImage src="/Frame 1171275940.png" alt="Back sign" className="w-full h-full object-contain" />
-        </button>
+        </button> */}
         <ResponsiveImage src="/accommodation.png" alt="Accommodation" className="object-contain max-w-full w-[180px] md:w-[263px] aspect-[4.31]" />
       </div>
 
