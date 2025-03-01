@@ -236,7 +236,7 @@ export const competitions = [
   location:"SAC",
   time:"",
   description: "Step into the warm, inviting aura of Chai Point, where stories, poetry, music, and musings flow as freely as steaming cups of chai. This open mic event is your stage—whether you’re a poet with words that stir the soul, a comedian with jokes that crack the room, a storyteller weaving magic, or a musician setting the vibe with soothing melodies.",
-  link:"https://docs.google.com/forms/d/e/1FAIpQLSc5exjdwvvAR68iYcBlN5zcHlxh2Ta0mtGTnMx5ooa8viW29w/viewform?usp=dialog ",
+  link:"https://docs.google.com/forms/d/e/1FAIpQLSfDCYSHcefMURTaqGr-4oWetVsrqE4pC4k7LXF3bqdx9t-4_g/viewform",
   image: "/music_events.png",
   categories:["all","music"]
 },
@@ -459,17 +459,17 @@ export const competitions = [
   image: "/adventure_events.png",
   categories:["all","adventure"]
 },
-{
-  id:40,
-  day:["2"],
-  date:"8th March",
-  title:"COMIC CLASH",
-  location:"NITK",
-  time:"4:00 PM - 6:00 PM",
-  link:"https://docs.google.com/forms/d/e/1FAIpQLSfDCYSHcefMURTaqGr-4oWetVsrqE4pC4k7LXF3bqdx9t-4_g/viewform",
-  image: "/art_events.png",
-  categories:["all","art"]
-},
+// {
+//   id:40,
+//   day:["2"],
+//   date:"8th March",
+//   title:"COMIC CLASH",
+//   location:"NITK",
+//   time:"4:00 PM - 6:00 PM",
+//   link:"https://docs.google.com/forms/d/e/1FAIpQLSfDCYSHcefMURTaqGr-4oWetVsrqE4pC4k7LXF3bqdx9t-4_g/viewform",
+//   image: "/art_events.png",
+//   categories:["all","art"]
+// },
 {
   id:41,
   day:["2"],
@@ -502,7 +502,7 @@ export const competitions = [
   location:"SJA",
   time:"12:00-14:00",
   description:"Truly setting the stage on fire, Promenade is a Western Dance competition where dance groups present the magnificence of sync and flow. Climbing the hill to the podium, passion is the phenomenon that puts you on the top",
-  link:"https://docs.google.com/forms/d/e/1FAIpQLSewnE3TPT5V4YRmCJas8T9FP5tPOkZynrtRpdJKk1b-5CwuTQ/viewform?usp=header",
+  link:"https://docs.google.com/forms/d/e/1FAIpQLSfgDglwIt1hvUO-DHvdxNKRgfG3VLyqufNyDafjjVPEMiUvRQ/viewform?usp=header",
   image: "/dance_events.png",
   categories:["all","dance"]
 },
@@ -533,13 +533,13 @@ export default function CompetitionsPage() {
       <div className="flex justify-center w-full mb-12">
         <ResponsiveImage src="/comp.png" alt="Competitions" className="object-contain mt-12 w-80 sm:w-96 aspect-[5.1]" />
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-auto gap-4 mb-12 overflow-x-auto pb-4">
+      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 xl:grid-cols-auto gap-2 mb-12 overflow-x-auto pb-4">
         {categories.map(({ id, image, label }) => (
           <button key={id} onClick={() => setSelectedCategory(id)} className={`flex flex-col items-center min-w-[100px] sm:min-w-[120px] p-2 shadow-md transition-transform ${selectedCategory === id ? "text-yellow-400 scale-105" : "text-yellow-500/60"}`}>
             <div className={`size-20 sm:size-24 rounded-full border-2 flex items-center justify-center mb-2 transition-all ${selectedCategory === id ? "border-yellow-400 bg-yellow-400/10 shadow-lg shadow-yellow-400/50" : "border-yellow-500/60"}`}>
               <Image src={image} alt={label} width={80} height={80} className="object-cover" />
             </div>
-            <span className="text-sm sm:text-lg text-center">{label}</span>
+            <span className="text-xl sm:text-3xl text-center">{label}</span>
           </button>
         ))}
       </div>
