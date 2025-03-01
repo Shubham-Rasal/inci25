@@ -14,6 +14,16 @@ export default function Team() {
       image: "/team/team/manvinder.png"
     },
     {
+      name: "PRASHANT",
+      role: "Fest Moderator",
+      image: "/team/team/Prashant Singh.jpg"
+    },
+    {
+      name: "DEEPAK",
+      role: "Production Head",
+      image: "/team/team/Deepak Verma.png"
+    },
+    {
       name: "VIVEK MISHRA",
       role: "Marketing Head",
       image: "/team/team/vivek_mishra.png"
@@ -22,11 +32,6 @@ export default function Team() {
       name: "RAJ GAUTAM",
       role: "Marketing Head",
       image: "/guy.png"
-    },
-    {
-      name: "PRASHANT",
-      role: "Fest Moderator",
-      image: "/team/team/Prashant Singh.jpg"
     },
     {
       name: "ASHWANI KUMAR",
@@ -47,6 +52,16 @@ export default function Team() {
       name: "KARTIKEY TIWARI",
       role: "Administrative Affairs",
       image: "/team/team/kartikey formal nk.jpg"
+    },
+    {
+      name: "VAIBHAV AGRAWAL",
+      role: "Website Lead",
+      image: "/team/team/vaibhav.jpg  "
+    },
+    {
+      name: "SHUBHAM SUBODH RASSAL",
+      role: "Website Lead",
+      image: "/team/team/shubham.jpeg"
     },
     {
       name: "CHETHAN SRINIVAS",
@@ -96,7 +111,7 @@ export default function Team() {
     {
       name: "YATENDRA",
       role: "Inci Logistics",
-      image: "/team/team/Yatendra.jpg"
+      image: "/team/team/yatendra.png"
     },
     {
       name: "MAYANK",
@@ -188,26 +203,13 @@ export default function Team() {
       role: "Creative Head",
       image: "/team/team/srigowri.png"
     },
-    {
-      name: "VAIBHAV AGRAWAL",
-      role: "Website Lead",
-      image: "/guy.png  "
-    },
-    {
-      name: "SHUBHAM SUBODH RASSAL",
-      role: "Website Lead",
-      image: "/team/team/shubham.jpeg"
-    },
+    
     {
       name: "SHRIKRISHNA",
       role: "Inci Special",
       image: "/team/team/Shrikrushna.jpg"
     },
-    {
-      name: "DEEPAK",
-      role: "Production Head",
-      image: "/team/team/Deepak Verma.png"
-    },
+    
     {
       name: "LUKESHWAR",
       role: "Production Head",
