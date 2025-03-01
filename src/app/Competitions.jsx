@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react";
 import Image from "next/image"
 import { Trophy, BookOpen, Gamepad, Music2, Music, Briefcase, Theater } from "lucide-react"
 import { ResponsiveImage } from "./Merch"
@@ -85,7 +85,7 @@ export const competitions = [
   day:["2"],
   date:"8th March",
   title:"ART ON THE SKIN",
-  description: "Unleash your inner artist in Art on the Skin! This face painting competition invites you to transform faces into stunning works of art. Whether you’re inspired by nature, fantasy, or abstract designs, this is your chance to showcase your creativity. With each stroke, bring your vision to life and compete to create the most captivating masterpiece. Join us for an exciting and colorful event, where every face tells a story",
+  description: "Unleash your inner artist in Art on the Skin! This face painting competition invites you to transform faces into stunning works of art. Whether you’re inspired by nature, fantasy, or abstract designs, this is your chance to showcase your creativity.",
   location:"Pavillion",
   time:"10:00 - 11:00",
   link:"https://docs.google.com/forms/d/e/1FAIpQLSf-gBsqHovDVJRG9rDCT6hO_k4M4_cDaRhyE2xbzvWDKcBvTQ/viewform?usp=header",
@@ -509,8 +509,20 @@ export const competitions = [
 ]
 
 export default function CompetitionsPage() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
-  const [selectedCompetition, setSelectedCompetition] = useState(null);
+  let [selectedCategory, setSelectedCategory] = useState("all");
+  let [selectedCompetition, setSelectedCompetition] = useState(null);
+
+  useEffect(() => {
+    const handleBack = (event) => {
+      if (selectedCompetition) {
+        event.preventDefault();
+        setSelectedCompetition(null);
+      }
+    };
+
+    window.addEventListener("popstate", handleBack);
+    return () => window.removeEventListener("popstate", handleBack);
+  }, [selectedCompetition]);
 
   const filteredCompetitions = competitions.filter((competition) =>
     selectedCategory === "all" ? true : competition.categories.includes(selectedCategory)
@@ -533,7 +545,10 @@ export default function CompetitionsPage() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {filteredCompetitions.map((competition) => (
-          <div key={competition.id} className="relative border-2 border-yellow-500/30 rounded-lg overflow-hidden group hover:border-yellow-400 transition-colors p-4 flex flex-col items-center cursor-pointer" onClick={() => setSelectedCompetition(competition)}>
+          <div key={competition.id} className="relative border-2 border-yellow-500/30 rounded-lg overflow-hidden group hover:border-yellow-400 transition-colors p-4 flex flex-col items-center cursor-pointer" onClick={() => {
+            setSelectedCompetition(competition);
+            history.pushState(null, "", location.href);
+          }}>
             <Image src={competition.image} alt={competition.title} width={300} height={200} className="rounded-lg shadow-md mb-3 object-cover" />
             <h3 className="text-xl sm:text-2xl font-bold text-center">{competition.title}</h3>
           </div>
@@ -541,8 +556,8 @@ export default function CompetitionsPage() {
       </div>
       {selectedCompetition && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 backdrop-blur-lg z-20" onClick={() => setSelectedCompetition(null)}>
-          <div className="bg-yellow-100 p-8 rounded-3xl shadow-2xl max-w-md w-full text-black relative" onClick={(e) => e.stopPropagation()}>
-            {/* <button className="absolute top-4 right-4 text-gray-800 text-3xl font-bold hover:text-red-500" onClick={() => setSelectedCompetition(null)}>&times;</button> */}
+          <div className="bg-yellow-100 p-8 rounded-3xl shadow-2xl max-w-md w-full text-black relative max-h-[80vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            <button className="absolute top-2 left-2 text-gray-800 text-5xl font-bold hover:text-red-500" onClick={() => setSelectedCompetition(null)}>&times;</button>
             <Image src={selectedCompetition.image} alt={selectedCompetition.title} width={400} height={250} className="rounded-xl shadow-lg mb-4" />
             <h2 className="text-3xl font-extrabold text-center mb-3 text-yellow-700">{selectedCompetition.title}</h2>
             <p className="text-md font-semibold text-center mb-2">{selectedCompetition.date} | {selectedCompetition.time}</p>
@@ -554,7 +569,6 @@ export default function CompetitionsPage() {
       )}
     </div>
   );
-  
 }
 
 
