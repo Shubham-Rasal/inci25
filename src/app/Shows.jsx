@@ -16,6 +16,8 @@ export default function Shows() {
     { title: "Event 2", button: "Learn More", src: "/Group 100.png" },
     { title: "Event 3", button: "Learn More", src: "/Group 101.png" },
     { title: "Event 4", button: "Learn More", src: "/Group 102.png" },
+    { title: "Event 5", button: "Learn More", src: "/Artboard 1.png" },
+    { title: "Event 6", button: "Learn More", src: "/Artboard 2.png" },
   ]
 
   return (

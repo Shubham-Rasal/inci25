@@ -557,7 +557,7 @@ export default function CompetitionsPage() {
       {selectedCompetition && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 backdrop-blur-lg z-20" onClick={() => setSelectedCompetition(null)}>
           <div className="bg-yellow-100 p-8 rounded-3xl shadow-2xl max-w-md w-full text-black relative max-h-[80vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-            <button className="absolute top-2 left-2 text-gray-800 text-5xl font-bold hover:text-red-500" onClick={() => setSelectedCompetition(null)}>&times;</button>
+            <button className="absolute top-2 right-2 text-gray-800 text-5xl font-bold hover:text-red-500" onClick={() => setSelectedCompetition(null)}>&times;</button>
             <Image src={selectedCompetition.image} alt={selectedCompetition.title} width={400} height={250} className="rounded-xl shadow-lg mb-4" />
             <h2 className="text-3xl font-extrabold text-center mb-3 text-yellow-700">{selectedCompetition.title}</h2>
             <p className="text-md font-semibold text-center mb-2">{selectedCompetition.date} | {selectedCompetition.time}</p>
