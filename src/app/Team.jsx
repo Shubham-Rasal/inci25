@@ -29,9 +29,9 @@ export default function Team() {
       image: "/team/team/vivek_mishra.png"
     },
     {
-      name: "RAJ GAUTAM",
+      name: "GAUTAM",
       role: "Marketing Head",
-      image: "/guy.png"
+      image: "/team/team/gautam.png"
     },
     {
       name: "ASHWANI KUMAR",
