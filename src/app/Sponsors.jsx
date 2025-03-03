@@ -33,7 +33,35 @@ const galleryImages = [
   }
 ];
 
+
+
 export const Gallery = () => {
+  const brands = [
+    { logo: "/logo/amul.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/L.1.jpg", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/sbi.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/quest.jpg", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/tribe.jpg", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/newMang.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/niveus.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/krafton.jpg", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/ease.jpg", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/uni.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/jioSaavn.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/smaaash.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/spykar.jpg", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/mcf.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/stockgro.png", svg: "/sponsorSVG.svg" },
+    // { logo: "/logo/remark.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/remarkSkill.jpg", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/gleam.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/goldflxhash.png", svg: "/sponsorSVG.svg" },
+    { logo: "/logo/unstop.jpg", svg: "/sponsorSVG.svg" },
+    
+    // { logo: "/logos/brand2.png", svg: "/svgs/frame2.svg" },
+    // { logo: "/logos/brand3.png", svg: "/svgs/frame3.svg" },
+    // { logo: "/logos/brand4.png", svg: "/svgs/frame4.svg" }
+  ];
   return (
     <div className="flex flex-col items-center mx-auto overflow-hidden max-md:pl-5">
       <div className="flex overflow-hidden flex-col justify-center items-center py-20 w-full  max-md:max-w-full">
@@ -44,26 +72,48 @@ export const Gallery = () => {
             alt="Main header image"
             className="object-contain self-center max-w-full aspect-[4.31] w-[270px]"
           />
-          <div className="flex flex-wrap justify-center gap-10 mx-auto w-full max-md:flex-col mt-24">
+          {/* <div className="flex flex-wrap justify-center gap-10 mx-auto w-full max-md:flex-col mt-24">
             {galleryImages.map((image, index) => (
               <GalleryItem key={index} image={image} />
             ))}
-          </div>
+          </div> */}
+          <div className="flex flex-wrap justify-center gap-10 mx-auto w-full max-md:flex-col mt-24">
+      {brands.map((item, index) => (
+        <GalleryItem key={index} logoSrc={item.logo} svgSrc={item.svg} />
+      ))}
+    </div>
         </div>
       </div>
     </div>
   );
 };
 
-export const GalleryItem = ({ image }) => {
+// export const GalleryItem = ({ logoSrc, svgSrc }) => {
+//   return (
+//     <div id="sponsors" className="flex flex-col self-center justify-center items-center my-auto w-[201px]">
+//       <img
+//         loading="lazy"
+//         src={image.src}
+//         alt={image.alt}
+//         className={image.className}
+//       />
+      
+//     </div>
+//   );
+// };
+
+export const GalleryItem = ({ logoSrc, svgSrc }) => {
   return (
     <div id="sponsors" className="flex flex-col self-center justify-center items-center my-auto w-[201px]">
-      <img
-        loading="lazy"
-        src={image.src}
-        alt={image.alt}
-        className={image.className}
-      />
+      <div className="relative w-[200px] h-[200px] border-gradient flex items-center justify-center overflow-hidden" style={{
+        borderImageSource: "linear-gradient(180deg, #755D21 0%, #DBAE3D 98%)"
+      }}>
+        <img src={svgSrc} className="absolute inset-0 w-full h-full object-contain" />
+        <img 
+          src={logoSrc} 
+          className="absolute max-w-[40%] max-h-[40%] object-contain items-center " 
+        />
+      </div>
     </div>
   );
 };
