@@ -12,12 +12,12 @@ export function cn(...inputs) {
 
 export default function Shows() {
   const slides = [
-    { title: "Event 1", button: "Learn More", src: "/Group 90.png" },
-    { title: "Event 2", button: "Learn More", src: "/Group 100.png" },
-    { title: "Event 3", button: "Learn More", src: "/Group 101.png" },
-    { title: "Event 4", button: "Learn More", src: "/Group 102.png" },
-    { title: "Event 5", button: "Learn More", src: "/Artboard 1.png" },
-    { title: "Event 6", button: "Learn More", src: "/Artboard 2.png" },
+    { title: "Event 1", button: "Learn More", src: "/Group 90.png", date: "6th March" , location: "SJA" },
+    { title: "Event 6", button: "Learn More", src: "/Artboard 2.png", date: "7th March" , location: "NITK Main Ground" },
+    { title: "Event 5", button: "Learn More", src: "/Artboard 1.png", date: "7th March" , location: "NITK Main Ground" },
+    { title: "Event 4", button: "Learn More", src: "/Group 102.png", date: "8th March" , location: "NITK Main Ground" },
+    { title: "Event 3", button: "Learn More", src: "/Group 101.png", date: "8th March" , location: "NITK Main Ground" },
+    { title: "Event 2", button: "Learn More", src: "/Group 100.png", date: "9th March" , location: "NITK Main Ground" },
   ]
 
   return (

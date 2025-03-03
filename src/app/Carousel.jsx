@@ -45,7 +45,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
     event.currentTarget.style.opacity = "1";
   };
 
-  const { src, button, title } = slide;
+  const { src, button, title, date, location } = slide;
 
   return (
     <div className="[perspective:900px] ">
@@ -65,7 +65,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
+          className="absolute top-0 left-0 w-full mx-auto  h-full rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
           style={{
             transform:
               current === index
@@ -74,7 +74,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
           }}
         >
           <img
-            className="absolute inset-0  object-cover opacity-100 scale-110  transition-opacity duration-600 ease-in-out"
+            className="absolute inset-0 md:pl-6 object-cover opacity-100 scale-110  transition-opacity duration-600 ease-in-out"
             style={{
               opacity: current === index ? 1 : 0.5,
             }}
@@ -84,25 +84,23 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
             loading="eager"
             decoding="sync"
           />
-          {current === index && (
+          {/* {current === index && (
             <div className="absolute inset-0  transition-all duration-1000" />
-          )}
-        </div>
-{/* 
+          )} */}
+
         <article
-          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
+          className={`relative mt-[75vmin] mx-auto md:mt-[60vmin]  p-[4vmin] transition-opacity duration-1000  ease-in-out ${
             current === index ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
           <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold  relative">
-            {title}
+            {date}
           </h2>
           <div className="flex justify-center">
-            <button className="mt-6  px-4 py-2 w-fit mx-auto sm:text-sm text-black bg-white h-12 border border-transparent text-xs flex justify-center items-center rounded-2xl hover:shadow-lg transition duration-200 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-              {button}
-            </button>
+           {location}
           </div>
-        </article> */}
+        </article>
+        </div>
       </li>
     </div>
   );
