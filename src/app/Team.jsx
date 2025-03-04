@@ -38,11 +38,6 @@ export default function Team() {
       role: "Creative Head",
       image: "/team/team/Ashwani.jpg"
     },
-    // {
-    //   name: "ADITYA SHANKAR",
-    //   role: "Marketing Head",
-    //   image: "/guy.png"
-    // },
     {
       name: "HARSH",
       role: "Treasurer",
@@ -199,8 +194,13 @@ export default function Team() {
       image: "/team/team/Alekya.jpg"
     },
     {
+      name: "IMPANA",
+      role: "Creative Core Team",
+      image: "/team/team/Impana.png"
+    },
+    {
       name: "SRIGOWRI BHARGAV",
-      role: "Creative Head",
+      role: "Creative Core Team",
       image: "/team/team/srigowri.png"
     },
     
@@ -228,7 +228,7 @@ export default function Team() {
     {
       name: "RAKSHATA",
       role: "Fest Curation",
-      image: "/guy.png"
+      image: "/team/team/Rakshita.png"
     },
     {
       name: "LAKSHITH",
@@ -236,7 +236,7 @@ export default function Team() {
       image: "/team/team/Lakshit Sharma.png"
     },
   ]
-
+  
   return (
     <div className="min-h-screen p-6 sm:p-8">
       {/* Back Button */}

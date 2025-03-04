@@ -16,7 +16,7 @@ export default function Shows() {
     { title: "Event 6", button: "Learn More", src: "/Artboard 2.png", date: "7th March" , location: "NITK Main Ground" },
     { title: "Event 5", button: "Learn More", src: "/Artboard 1.png", date: "7th March" , location: "NITK Main Ground" },
     { title: "Event 4", button: "Learn More", src: "/Group 102.png", date: "8th March" , location: "NITK Main Ground" },
-    { title: "Event 3", button: "Learn More", src: "/Group 101.png", date: "8th March" , location: "NITK Main Ground" },
+    { title: "Event 3", button: "Learn More", src: "/Group 101.png", date: "8`t`h March" , location: "NITK Main Ground" },
     { title: "Event 2", button: "Learn More", src: "/Group 100.png", date: "9th March" , location: "NITK Main Ground" },
   ]
 
