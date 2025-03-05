@@ -108,10 +108,16 @@ export default function Team() {
       role: "Inci Logistics",
       image: "/team/team/yatendra.png"
     },
+    
     {
       name: "MAYANK",
       role: "Corporate Hospitality",
       image: "/team/team/Mayank.jpg"
+    },
+    {
+      name: "JAGRITI",
+      role: "Event Coordinator",
+      image: "/team/team/Jagriti.jpg"
     },
     {
       name: "VEDANSH",
